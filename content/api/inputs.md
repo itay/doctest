@@ -1,5 +1,6 @@
+<a name='datainputsad'/>
+
 ## data/inputs/ad
-{: name='datainputsad'}
 
 Gets current AD monitoring configuration.
 
@@ -96,7 +97,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/ad
 </code></pre>
 
 ## data/inputs/ad
-{: name='datainputsad'}
 
 Creates new or modifies existing performance monitoring settings.
 
@@ -175,8 +175,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/inputs
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsadname'/>
+
 ## data/inputs/ad/{name}
-{: name='datainputsadname'}
 
 Deletes a given AD monitoring stanza.
 
@@ -233,7 +234,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/ad/{name}
-{: name='datainputsadname'}
 
 Gets the current configuration for a given AD monitoring stanza.
 
@@ -331,7 +331,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 </code></pre>
 
 ## data/inputs/ad/{name}
-{: name='datainputsadname'}
 
 Modifies a given AD monitoring stanza.
 
@@ -408,8 +407,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsmonitor'/>
+
 ## data/inputs/monitor
-{: name='datainputsmonitor'}
 
 List enabled and disabled monitor inputs.
 
@@ -508,7 +508,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/monitor
 </code></pre>
 
 ## data/inputs/monitor
-{: name='datainputsmonitor'}
 
 Create a new file or directory monitor input.
 
@@ -616,8 +615,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsmonitorname'/>
+
 ## data/inputs/monitor/{name}
-{: name='datainputsmonitorname'}
 
 Disable the named monitor data input and remove it from the configuration.
 
@@ -676,7 +676,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/monitor/{name}
-{: name='datainputsmonitorname'}
 
 List the properties of a single monitor data input.
 
@@ -788,7 +787,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/monitor/{name}
-{: name='datainputsmonitorname'}
 
 Update properties of the named monitor input.
 
@@ -897,8 +895,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsmonitornamemembers'/>
+
 ## data/inputs/monitor/{name}/members
-{: name='datainputsmonitornamemembers'}
 
 Lists all files monitored under the named monitor input.
 
@@ -993,8 +992,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsoneshot'/>
+
 ## data/inputs/oneshot
-{: name='datainputsoneshot'}
 
 Enumerates in-progress oneshot inputs. As soon as an input is complete, it is removed from this list.
 
@@ -1087,7 +1087,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/oneshot
 </code></pre>
 
 ## data/inputs/oneshot
-{: name='datainputsoneshot'}
 
 Queues a file for immediate indexing by the file input subsystem. The file must be locally accessible from the server.
 
@@ -1169,8 +1168,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/oneshot \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsoneshotname'/>
+
 ## data/inputs/oneshot/{name}
-{: name='datainputsoneshotname'}
 
 Finds information about a single in-flight one shot input. This is a subset of the information in the full enumeration.
 
@@ -1258,8 +1258,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsregistry'/>
+
 ## data/inputs/registry
-{: name='datainputsregistry'}
 
 Gets current registry monitoring configuration.
 
@@ -1365,7 +1366,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/registry
 </code></pre>
 
 ## data/inputs/registry
-{: name='datainputsregistry'}
 
 Creates new or modifies existing registry monitoring settings.
 
@@ -1453,8 +1453,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsregistryname'/>
+
 ## data/inputs/registry/{name}
-{: name='datainputsregistryname'}
 
 Deletes registry monitoring configuration stanza.
 
@@ -1511,7 +1512,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/registry/{name}
-{: name='datainputsregistryname'}
 
 Gets current registry monitoring configuration stanza.
 
@@ -1622,7 +1622,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 </code></pre>
 
 ## data/inputs/registry/{name}
-{: name='datainputsregistryname'}
 
 Modifies given registry monitoring stanza.
 
@@ -1708,8 +1707,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsscript'/>
+
 ## data/inputs/script
-{: name='datainputsscript'}
 
 Gets the configuration settings for scripted inputs.
 
@@ -1812,7 +1812,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/script
 </code></pre>
 
 ## data/inputs/script
-{: name='datainputsscript'}
 
 Configures settings for new scripted inputs.
 
@@ -1901,8 +1900,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsscriptrestart'/>
+
 ## data/inputs/script/restart
-{: name='datainputsscriptrestart'}
 
 Causes a restart on a given scripted input.
 
@@ -1966,8 +1966,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsscriptname'/>
+
 ## data/inputs/script/{name}
-{: name='datainputsscriptname'}
 
 Removes the scripted input specified by {name}.
 
@@ -2028,7 +2029,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/script/{name}
-{: name='datainputsscriptname'}
 
 Returns the configuration settings for the scripted input specified by {name}.
 
@@ -2135,7 +2135,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/script/{name}
-{: name='datainputsscriptname'}
 
 Configures settings for scripted input specified by {name}.
 
@@ -2223,8 +2222,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcpcooked'/>
+
 ## data/inputs/tcp/cooked
-{: name='datainputstcpcooked'}
 
 Returns information about all cooked TCP inputs.
 
@@ -2323,7 +2323,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/tcp/cooked
 </code></pre>
 
 ## data/inputs/tcp/cooked
-{: name='datainputstcpcooked'}
 
 Creates a new container for managing cooked data.
 
@@ -2401,8 +2400,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcpcookedname'/>
+
 ## data/inputs/tcp/cooked/{name}
-{: name='datainputstcpcookedname'}
 
 Removes the cooked TCP inputs for port or host:port specified by <code>{name}</code>
 
@@ -2459,7 +2459,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/tcp/cooked/{name}
-{: name='datainputstcpcookedname'}
 
 Returns information for the cooked TCP input specified by <code>{name}</code>.
 
@@ -2633,7 +2632,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/tcp/cooked/{name}
-{: name='datainputstcpcookedname'}
 
 Updates the container for managaing cooked data.
 
@@ -2710,8 +2708,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcpcookednameconnections'/>
+
 ## data/inputs/tcp/cooked/{name}/connections
-{: name='datainputstcpcookednameconnections'}
 
 Retrieves list of active connections to the named port.
 
@@ -2789,8 +2788,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcpraw'/>
+
 ## data/inputs/tcp/raw
-{: name='datainputstcpraw'}
 
 Returns information about all raw TCP inputs.
 
@@ -2889,7 +2889,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/tcp/raw
 </code></pre>
 
 ## data/inputs/tcp/raw
-{: name='datainputstcpraw'}
 
 Creates a new data input for accepting raw TCP data.
 
@@ -2979,8 +2978,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcprawname'/>
+
 ## data/inputs/tcp/raw/{name}
-{: name='datainputstcprawname'}
 
 Removes the raw inputs for port or host:port specified by <code>{name}</code>
 
@@ -3037,7 +3037,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/tcp/raw/{name}
-{: name='datainputstcprawname'}
 
 Returns information about raw TCP input port <code>{name}</code>.
 
@@ -3209,7 +3208,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/tcp/raw/{name}
-{: name='datainputstcprawname'}
 
 Updates the container for managing raw data.
 
@@ -3298,8 +3296,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcprawnameconnections'/>
+
 ## data/inputs/tcp/raw/{name}/connections
-{: name='datainputstcprawnameconnections'}
 
 View all connections to the named data input.
 
@@ -3374,8 +3373,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/tcp/raw/9998/c
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcpssl'/>
+
 ## data/inputs/tcp/ssl
-{: name='datainputstcpssl'}
 
 Returns SSL configuration. There is only one SSL configuration for all input ports.
 
@@ -3469,8 +3469,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/tcp/ssl
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputstcpsslname'/>
+
 ## data/inputs/tcp/ssl/{name}
-{: name='datainputstcpsslname'}
 
 Returns the SSL configuration for the host {name}.
 
@@ -3547,7 +3548,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/tcp/ssl/ssl
 </code></pre>
 
 ## data/inputs/tcp/ssl/{name}
-{: name='datainputstcpsslname'}
 
 Configures SSL attributes for the host {name}.
 
@@ -3623,8 +3623,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/tcp/ssl/ssl \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsudp'/>
+
 ## data/inputs/udp
-{: name='datainputsudp'}
 
 List enabled and disabled UDP data inputs.
 
@@ -3723,7 +3724,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/udp
 </code></pre>
 
 ## data/inputs/udp
-{: name='datainputsudp'}
 
 Create a new UDP data input.
 
@@ -3810,8 +3810,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsudpname'/>
+
 ## data/inputs/udp/{name}
-{: name='datainputsudpname'}
 
 Disable the named UDP data input and remove it from the configuration.
 
@@ -3868,7 +3869,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/udp/{name}
-{: name='datainputsudpname'}
 
 List the properties of a single UDP data input port or host:port <code>{name}</code>.
 If port is restricted to a host, name should be URI-encoded host:port.
@@ -4038,7 +4038,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/udp/{name}
-{: name='datainputsudpname'}
 
 Edit properties of the named UDP data input.
 
@@ -4124,8 +4123,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputsudpnameconnections'/>
+
 ## data/inputs/udp/{name}/connections
-{: name='datainputsudpnameconnections'}
 
 Lists connections to the named UDP input.
 
@@ -4203,8 +4203,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputswineventlogcollections'/>
+
 ## data/inputs/win-event-log-collections
-{: name='datainputswineventlogcollections'}
 
 Retrieves a list of configured event log collections.
 
@@ -4315,7 +4316,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/win-event-log-
 </code></pre>
 
 ## data/inputs/win-event-log-collections
-{: name='datainputswineventlogcollections'}
 
 Creates of modifies existing event log collection settings.  You can configure both native and WMI collection with this endpoint.
 
@@ -4426,8 +4426,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputswineventlogcollectionsname'/>
+
 ## data/inputs/win-event-log-collections/{name}
-{: name='datainputswineventlogcollectionsname'}
 
 Deletes a given event log collection.
 
@@ -4484,7 +4485,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/win-event-log-collections/{name}
-{: name='datainputswineventlogcollectionsname'}
 
 Gets the configuration settings for a given event log collection.
 
@@ -4594,7 +4594,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/win-event-log-collections/{name}
-{: name='datainputswineventlogcollectionsname'}
 
 Modifies existing event log collection.
 
@@ -4703,8 +4702,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputswinperfmon'/>
+
 ## data/inputs/win-perfmon
-{: name='datainputswinperfmon'}
 
 Gets current performance monitoring configuration.
 
@@ -4808,7 +4808,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/win-perfmon
 </code></pre>
 
 ## data/inputs/win-perfmon
-{: name='datainputswinperfmon'}
 
 Creates new or modifies existing performance monitoring collection settings.
 
@@ -4913,8 +4912,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/input
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputswinperfmonname'/>
+
 ## data/inputs/win-perfmon/{name}
-{: name='datainputswinperfmonname'}
 
 Deletes a given monitoring stanza.
 
@@ -4971,7 +4971,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/win-perfmon/{name}
-{: name='datainputswinperfmonname'}
 
 Gets settings for a given perfmon stanza.
 
@@ -5077,7 +5076,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/win-perfmon/{name}
-{: name='datainputswinperfmonname'}
 
 Modifies existing monitoring stanza
 
@@ -5180,8 +5178,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputswinwmicollections'/>
+
 ## data/inputs/win-wmi-collections
-{: name='datainputswinwmicollections'}
 
 Provides access to all configure WMI collections.
 
@@ -5291,7 +5290,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/inputs/win-wmi-collec
 </code></pre>
 
 ## data/inputs/win-wmi-collections
-{: name='datainputswinwmicollections'}
 
 Creates of modifies existing WMI collection settings.
 
@@ -5403,8 +5401,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datainputswinwmicollectionsname'/>
+
 ## data/inputs/win-wmi-collections/{name}
-{: name='datainputswinwmicollectionsname'}
 
 Deletes a given collection.
 
@@ -5461,7 +5460,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/inputs/win-wmi-collections/{name}
-{: name='datainputswinwmicollectionsname'}
 
 Gets information about a single collection.
 
@@ -5576,7 +5574,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/inputs/win-wmi-collections/{name}
-{: name='datainputswinwmicollectionsname'}
 
 Modifies a given WMI collection.
 
@@ -5700,8 +5697,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='receiverssimple'/>
+
 ## receivers/simple
-{: name='receiverssimple'}
 
 Create events from the contents contained in the HTTP body.
 
@@ -5786,8 +5784,9 @@ curl -k -u admin:pass "https://localhost:8089/services/receivers/simple?source=w
 &lt;/response&gt;
 </code></pre>
 
+<a name='receiversstream'/>
+
 ## receivers/stream
-{: name='receiversstream'}
 
 Create events from the stream of data following HTTP headers.
 

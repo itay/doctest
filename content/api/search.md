@@ -1,5 +1,6 @@
+<a name='alertsfiredalerts'/>
+
 ## alerts/fired_alerts
-{: name='alertsfiredalerts'}
 
 Returns a summary view of the list of all alerts that have been fired on the server.
 
@@ -86,8 +87,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/-/alerts/fired_ale
 &lt;/feed&gt;
 </code></pre>
 
+<a name='alertsfiredalertsname'/>
+
 ## alerts/fired_alerts/{name}
-{: name='alertsfiredalertsname'}
 
 Deletes the record of this triggered alert.
 
@@ -142,7 +144,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## alerts/fired_alerts/{name}
-{: name='alertsfiredalertsname'}
 
 Returns a list of all unexpired triggered or fired instances of this alert.
 
@@ -221,8 +222,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/alerts/fire
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datacommands'/>
+
 ## data/commands
-{: name='datacommands'}
 
 List all python search commands.
 
@@ -327,8 +329,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/comma
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datacommandsname'/>
+
 ## data/commands/{name}
-{: name='datacommandsname'}
 
 Provide information about a specific python search command.
 
@@ -428,8 +431,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/comma
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedsearches'/>
+
 ## saved/searches
-{: name='savedsearches'}
 
 Returns information on all saved searches.
 
@@ -573,7 +577,6 @@ curl -k -u admin:pass https://localhost:8089/services/saved/searches
 </code></pre>
 
 ## saved/searches
-{: name='savedsearches'}
 
 Creates a saved search.
 
@@ -1042,8 +1045,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedsearchesname'/>
+
 ## saved/searches/{name}
-{: name='savedsearchesname'}
 
 Deletes this saved search.
 
@@ -1100,7 +1104,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## saved/searches/{name}
-{: name='savedsearchesname'}
 
 Returns information on this saved search.
 
@@ -1415,7 +1418,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/searc
 </code></pre>
 
 ## saved/searches/{name}
-{: name='savedsearchesname'}
 
 Updates this saved search.
 
@@ -1893,8 +1895,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/searc
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedsearchesnameacknowledge'/>
+
 ## saved/searches/{name}/acknowledge
-{: name='savedsearchesnameacknowledge'}
 
 Acknowledge the suppression of the alerts from this saved search and resume alerting. Action available only with POST
 
@@ -1954,8 +1957,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedsearchesnamedispatch'/>
+
 ## saved/searches/{name}/dispatch
-{: name='savedsearchesnamedispatch'}
 
 Dispatch the saved search just like the scheduler would. Action available only through POST. The following optional arguments are accepted:
 dispatch.now:    [time] dispatch the search as if it this was the current time 
@@ -2008,8 +2012,9 @@ curl -k -u admin:pass \
 &lt;response&gt;&lt;sid&gt;admin__admin__search__MySavedSearch_at_1311797437_d831d980832e3e89&lt;/sid&gt;&lt;/response&gt;
 </code></pre>
 
+<a name='savedsearchesnamehistory'/>
+
 ## saved/searches/{name}/history
-{: name='savedsearchesnamehistory'}
 
 Get a list of available search jobs created from this saved search
 
@@ -2119,8 +2124,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedsearchesnamesuppress'/>
+
 ## saved/searches/{name}/suppress
-{: name='savedsearchesnamesuppress'}
 
 Check the suppression state of alerts from this saved search.
 
@@ -2197,8 +2203,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='scheduledviews'/>
+
 ## scheduled/views
-{: name='scheduledviews'}
 
 Lists all scheduled view objects
 
@@ -2304,8 +2311,9 @@ curl -k -u admin:pass https://localhost:8089/services/scheduled/views
 &lt;/feed&gt;
 </code></pre>
 
+<a name='scheduledviewsname'/>
+
 ## scheduled/views/{name}
-{: name='scheduledviewsname'}
 
 Delete a scheduled view
 
@@ -2362,7 +2370,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## scheduled/views/{name}
-{: name='scheduledviewsname'}
 
 List one scheduled view object
 
@@ -2506,7 +2513,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
 </code></pre>
 
 ## scheduled/views/{name}
-{: name='scheduledviewsname'}
 
 Edit a scheduled view, e.g. change schedule, enable disable schedule etc
 
@@ -2656,8 +2662,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
 &lt;/feed&gt;
 </code></pre>
 
+<a name='scheduledviewsnamedispatch'/>
+
 ## scheduled/views/{name}/dispatch
-{: name='scheduledviewsnamedispatch'}
 
 Dispatch the scheduled search (powering the scheduled view) just like the scheduler would. Action available only through POST. The following optional arguments are accepted:"dispatch.now:    [time] dispatch the search as if it this was the current time
 dispatch.*:      any dispatch.* field of the search can be overriden
@@ -2708,8 +2715,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
 &lt;response&gt;&lt;sid&gt;admin__admin__search_X1NjaGVkdWxlZFZpZXdfX015Vmlldw_at_1311805021_c24ff1ea77ad714b&lt;/sid&gt;&lt;/response&gt;
 </code></pre>
 
+<a name='scheduledviewsnamehistory'/>
+
 ## scheduled/views/{name}/history
-{: name='scheduledviewsnamehistory'}
 
 Get a list of search jobs used to deliver this scheduled view
 
@@ -2784,8 +2792,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
 &lt;/feed&gt;
 </code></pre>
 
+<a name='searchjobs'/>
+
 ## search/jobs
-{: name='searchjobs'}
 
 Returns a list of current searches. 
 
@@ -3111,7 +3120,6 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs
 </code></pre>
 
 ## search/jobs
-{: name='searchjobs'}
 
 Starts a new search, returning the search ID (<code>&lt;sid&gt;</code>).
 
@@ -3260,8 +3268,9 @@ curl -k -u admin:pass \
 &lt;response&gt;&lt;sid&gt;mysearch_02151949&lt;/sid&gt;&lt;/response&gt;
 </code></pre>
 
+<a name='searchjobsexport'/>
+
 ## search/jobs/export
-{: name='searchjobsexport'}
 
 Performs a search identical to POST search/jobs, except the search does not create a search ID (<sid>) and the search streams results as they become available. Streaming of results is based on the search string.
  
@@ -3438,8 +3447,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/jobs
 &lt;/results&gt;
 </code></pre>
 
+<a name='searchjobssearchid'/>
+
 ## search/jobs/{search_id}
-{: name='searchjobssearchid'}
 
 Deletes the search job specified by {search_id}.
 
@@ -3474,7 +3484,6 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/search/jo
 </code></pre>
 
 ## search/jobs/{search_id}
-{: name='searchjobssearchid'}
 
 Return summary information about the search job specified by {search_id}.
 
@@ -3719,8 +3728,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
 &lt;/entry&gt;
 </code></pre>
 
+<a name='searchjobssearchidcontrol'/>
+
 ## search/jobs/{search_id}/control
-{: name='searchjobssearchidcontrol'}
 
 Executes a job control command for the search specified by {search_id}.
 
@@ -3759,8 +3769,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
 &lt;response&gt;&lt;messages&gt;&lt;msg type='INFO'&gt;Search job paused.&lt;/msg&gt;&lt;/messages&gt;&lt;/response&gt;
 </code></pre>
 
+<a name='searchjobssearchidevents'/>
+
 ## search/jobs/{search_id}/events
-{: name='searchjobssearchidevents'}
 
 Returns the events of the search specified by {search_id}. These events are the data from the search pipeline before the first "transforming" search command. This is the primary method for a client to fetch a set of UNTRANSFORMED events for the search job.
 
@@ -3896,8 +3907,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/1312313809.20/
 &lt;/results&gt;
 </code></pre>
 
+<a name='searchjobssearchidresults'/>
+
 ## search/jobs/{search_id}/results
-{: name='searchjobssearchidresults'}
 
 Returns the results of the search specified by {search_id}. This is the table that exists after all processing from the search pipeline has completed.
 
@@ -3974,8 +3986,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
 ]
 </code></pre>
 
+<a name='searchjobssearchidresultspreview'/>
+
 ## search/jobs/{search_id}/results_preview
-{: name='searchjobssearchidresultspreview'}
 
 Returns the intermediate preview results of the search specified by {search_id}. When the job is complete, this gives the same response as /search/jobs/{search_id}/results.
 
@@ -4057,8 +4070,9 @@ curl -k -u admin:pass \
 ]
 </code></pre>
 
+<a name='searchjobssearchidsearch.log'/>
+
 ## search/jobs/{search_id}/search.log
-{: name='searchjobssearchidsearch.log'}
 
 Returns the search.log for the search job specified by {search_id}.
 
@@ -4110,8 +4124,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
 . . .
 </code></pre>
 
+<a name='searchjobssearchidsummary'/>
+
 ## search/jobs/{search_id}/summary
-{: name='searchjobssearchidsummary'}
 
 Returns "getFieldsAndStats" output of the so-far-read events.
 
@@ -4194,8 +4209,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mytestsid/summ
 &lt;/summary&gt;
 </code></pre>
 
+<a name='searchjobssearchidtimeline'/>
+
 ## search/jobs/{search_id}/timeline
-{: name='searchjobssearchidtimeline'}
 
 Returns event distribution over time of the so-far-read untransformed events.
 
@@ -4265,8 +4281,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mytestsid/time
 &lt;/timeline&gt;
 </code></pre>
 
+<a name='searchparser'/>
+
 ## search/parser
-{: name='searchparser'}
 
 Parses Splunk search language and returns semantic map.
 
@@ -4338,8 +4355,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/pars
 }
 </code></pre>
 
+<a name='searchtimeparser'/>
+
 ## search/timeparser
-{: name='searchtimeparser'}
 
 Returns a lookup table of time arguments to absolute timestamps.
 
@@ -4396,8 +4414,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/time
 &lt;/response&gt;
 </code></pre>
 
+<a name='searchtypeahead'/>
+
 ## search/typeahead
-{: name='searchtypeahead'}
 
 Returns a list of words or descriptions for possible auto-complete terms.
 

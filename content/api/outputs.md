@@ -1,5 +1,6 @@
+<a name='dataoutputstcpdefault'/>
+
 ## data/outputs/tcp/default
-{: name='dataoutputstcpdefault'}
 
 Returns the current tcpout properties.
 
@@ -101,7 +102,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/default
 </code></pre>
 
 ## data/outputs/tcp/default
-{: name='dataoutputstcpdefault'}
 
 Configures global tcpout properties.
 
@@ -174,8 +174,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/default/t
 
 </code></pre>
 
+<a name='dataoutputstcpdefaultname'/>
+
 ## data/outputs/tcp/default/{name}
-{: name='dataoutputstcpdefaultname'}
 
 Disable the default forwarding settings.
 
@@ -232,7 +233,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/outputs/tcp/default/{name}
-{: name='dataoutputstcpdefaultname'}
 
 Retrieve the named configuration.  The only valid name here is "tcpout".
 
@@ -274,7 +274,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/default/t
 </code></pre>
 
 ## data/outputs/tcp/default/{name}
-{: name='dataoutputstcpdefaultname'}
 
 Configure global forwarding properties.
 
@@ -360,8 +359,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/default/t
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpgroup'/>
+
 ## data/outputs/tcp/group
-{: name='dataoutputstcpgroup'}
 
 Returns configuration information about target groups. 
 
@@ -460,7 +460,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/group
 </code></pre>
 
 ## data/outputs/tcp/group
-{: name='dataoutputstcpgroup'}
 
 Configures a group of one or more data forwarding destinations.
 
@@ -555,8 +554,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/group \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpgroupname'/>
+
 ## data/outputs/tcp/group/{name}
-{: name='dataoutputstcpgroupname'}
 
 Deletes the target group specified by {name}.
 
@@ -613,7 +613,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/outputs/tcp/group/{name}
-{: name='dataoutputstcpgroupname'}
 
 Returns configuration information about the target group specified by {name}.
 
@@ -724,7 +723,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/group/lan
 </code></pre>
 
 ## data/outputs/tcp/group/{name}
-{: name='dataoutputstcpgroupname'}
 
 Updates the configuration of the target group.
 
@@ -817,8 +815,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/group/lan
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpserver'/>
+
 ## data/outputs/tcp/server
-{: name='dataoutputstcpserver'}
 
 Lists existing forwarded servers.
 
@@ -919,7 +918,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/server
 </code></pre>
 
 ## data/outputs/tcp/server
-{: name='dataoutputstcpserver'}
 
 Creates a new forwarder output.
 
@@ -1022,8 +1020,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/server \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpservername'/>
+
 ## data/outputs/tcp/server/{name}
-{: name='dataoutputstcpservername'}
 
 Deletes the configuration for the forwarded server specified by {name}.
 
@@ -1080,7 +1079,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/outputs/tcp/server/{name}
-{: name='dataoutputstcpservername'}
 
 Lists information aobut the forwarded server specified by {name}.
 
@@ -1185,7 +1183,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/server/ti
 </code></pre>
 
 ## data/outputs/tcp/server/{name}
-{: name='dataoutputstcpservername'}
 
 Configures the forwarded server specified by {name}.
 
@@ -1286,8 +1283,9 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/server/ti
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpservernameallconnections'/>
+
 ## data/outputs/tcp/server/{name}/allconnections
-{: name='dataoutputstcpservernameallconnections'}
 
 List current connections to forwarded server specified by {name} 
 
@@ -1366,8 +1364,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpsyslog'/>
+
 ## data/outputs/tcp/syslog
-{: name='dataoutputstcpsyslog'}
 
 Provides access to syslog data forwarding configurations.
 
@@ -1462,7 +1461,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/syslog
 </code></pre>
 
 ## data/outputs/tcp/syslog
-{: name='dataoutputstcpsyslog'}
 
 Configures a forwarder to send data in standard syslog format.
 
@@ -1542,8 +1540,9 @@ curl -k -u admin:changeme https://localhost:8089/services/data/outputs/tcp/syslo
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataoutputstcpsyslogname'/>
+
 ## data/outputs/tcp/syslog/{name}
-{: name='dataoutputstcpsyslogname'}
 
 Deletes the configuration for the forwarder specified by {name} that sends data in syslog format.
 
@@ -1601,7 +1600,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/outputs/tcp/syslog/{name}
-{: name='dataoutputstcpsyslogname'}
 
 Returns configuration information for the forwarder specified by {name} that sends data in standard syslog format.
 
@@ -1689,7 +1687,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/outputs/tcp/syslog/we
 </code></pre>
 
 ## data/outputs/tcp/syslog/{name}
-{: name='dataoutputstcpsyslogname'}
 
 Updates the configuration of the forwarder specified by {name} that sends data in syslog format.
 

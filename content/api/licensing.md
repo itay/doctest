@@ -1,5 +1,6 @@
+<a name='licensergroups'/>
+
 ## licenser/groups
-{: name='licensergroups'}
 
 Lists all licenser groups.
 
@@ -92,8 +93,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/groups
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licensergroupsname'/>
+
 ## licenser/groups/{name}
-{: name='licensergroupsname'}
 
 Lists a specific licenser group.  A licenser group contains one or more licenser stacks that can operate concurrently.  Only one licenser group is active at any given time
 
@@ -184,7 +186,6 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/groups/Forwarder
 </code></pre>
 
 ## licenser/groups/{name}
-{: name='licensergroupsname'}
 
 Activates specific licenser group with the side effect of deactivating the previously active one.
 
@@ -249,8 +250,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/groups/Enterprise
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserlicenses'/>
+
 ## licenser/licenses
-{: name='licenserlicenses'}
 
 Lists all licenses that have been added.  Only a subset of these licenses may be active however, this is simply listing all licenses in every stack/group, regardless of which group is active
 
@@ -371,7 +373,6 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/licenses
 </code></pre>
 
 ## licenser/licenses
-{: name='licenserlicenses'}
 
 Add a license entitlement to this instance.
 
@@ -484,8 +485,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/licenses \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserlicensesname'/>
+
 ## licenser/licenses/{name}
-{: name='licenserlicensesname'}
 
 Delete the license with hash corresponding to {name}.
 
@@ -546,7 +548,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## licenser/licenses/{name}
-{: name='licenserlicensesname'}
 
 List attributes of specific license.  The {name} portion of URL is actually the hash of the license payload.
 
@@ -662,8 +663,9 @@ curl -k -u admin:pass https://127.0.0.1:3339/services/licenser/licenses/E4BF . .
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licensermessages'/>
+
 ## licenser/messages
-{: name='licensermessages'}
 
 Lists all messages/alerts/persisted warnings for this node.
 
@@ -756,8 +758,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/messages
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licensermessagesname'/>
+
 ## licenser/messages/{name}
-{: name='licensermessagesname'}
 
 List specific message whose msgId corresponds to {name} component.
 
@@ -848,8 +851,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserpools'/>
+
 ## licenser/pools
-{: name='licenserpools'}
 
 Enumerates all pools.  A pool logically partitions the daily volume entitlements of a stack. You can use a pool to divide license privileges amongst multiple slaves
 
@@ -977,7 +981,6 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools
 </code></pre>
 
 ## licenser/pools
-{: name='licenserpools'}
 
 Create a license pool.
 
@@ -1057,8 +1060,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserpoolsname'/>
+
 ## licenser/pools/{name}
-{: name='licenserpoolsname'}
 
 Delete specified pool.  Deleting pools is not supported for every pool. Certain stacks have fixed pools which cannot be deleted.
 
@@ -1118,7 +1122,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## licenser/pools/{name}
-{: name='licenserpoolsname'}
 
 Lists details of the pool specified by {name}.
 
@@ -1219,7 +1222,6 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools/auto_genera
 </code></pre>
 
 ## licenser/pools/{name}
-{: name='licenserpoolsname'}
 
 Edit properties of the pool specified by {name}.
 
@@ -1323,8 +1325,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools/myLicensePo
   &lt;/entry&gt;
 </code></pre>
 
+<a name='licenserslaves'/>
+
 ## licenser/slaves
-{: name='licenserslaves'}
 
 List all slaves registered to this license master.  Any slave that attempts to connect to master is reported, regardless of whether it is allocated to a master licenser pool.
 
@@ -1456,8 +1459,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/slaves
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserslavesname'/>
+
 ## licenser/slaves/{name}
-{: name='licenserslavesname'}
 
 List attributes of slave specified by {name}.
 
@@ -1588,8 +1592,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserstacks'/>
+
 ## licenser/stacks
-{: name='licenserstacks'}
 
 Enumerate all license stacks.
 
@@ -1732,8 +1737,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/stacks
 &lt;/feed&gt;
 </code></pre>
 
+<a name='licenserstacksname'/>
+
 ## licenser/stacks/{name}
-{: name='licenserstacksname'}
 
 Retrieve details of specific license stacks.  A license stack is comprised of one or more licenses of the same "type".  The daily indexing quota of a license stack is additive, so a stack represents the aggregate entitlement for a collection of licenses.
 

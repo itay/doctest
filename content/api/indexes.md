@@ -1,5 +1,6 @@
+<a name='dataindexes'/>
+
 ## data/indexes
-{: name='dataindexes'}
 
 Lists the recognized indexes on the server.
 
@@ -139,7 +140,6 @@ curl -k -u admin:pass https://localhost:8089/services/data/indexes
 </code></pre>
 
 ## data/indexes
-{: name='dataindexes'}
 
 Creates a new index with the given name.
 
@@ -363,8 +363,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/indexe
 &lt;/feed&gt;
 </code></pre>
 
+<a name='dataindexesname'/>
+
 ## data/indexes/{name}
-{: name='dataindexesname'}
 
 Retrieves information about the named index.
 
@@ -532,7 +533,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/index
 </code></pre>
 
 ## data/indexes/{name}
-{: name='dataindexesname'}
 
 Updates the data index specified by <code>{name}</code> with information specified with index attributes.
 

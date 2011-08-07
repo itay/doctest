@@ -1,5 +1,6 @@
+<a name='authlogin'/>
+
 ## auth/login
-{: name='authlogin'}
 
 Returns a session key to be used when making REST calls to splunkd.
 
@@ -44,8 +45,9 @@ curl -k -u admin:pass  https://localhost:8089/services/auth/login \
 &lt;/response&gt;
 </code></pre>
 
+<a name='authenticationauthtokens'/>
+
 ## authentication/auth-tokens
-{: name='authenticationauthtokens'}
 
 Does nothing.  Is a placeholder for potential future information.
 
@@ -118,7 +120,6 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/auth-tokens
 </code></pre>
 
 ## authentication/auth-tokens
-{: name='authenticationauthtokens'}
 
 Creates an authentication token
 
@@ -220,8 +221,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/auth-tokens
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authenticationcurrentcontext'/>
+
 ## authentication/current-context
-{: name='authenticationcurrentcontext'}
 
 Lists one item named "context" which contains the name of the current user
 
@@ -308,8 +310,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/current-con
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authenticationcurrentcontextname'/>
+
 ## authentication/current-context/{name}
-{: name='authenticationcurrentcontextname'}
 
 Displays an item (always named "context") that contains the name of the current user.
 
@@ -350,8 +353,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/current-con
 
 </code></pre>
 
+<a name='authenticationhttpauthtokens'/>
+
 ## authentication/httpauth-tokens
-{: name='authenticationhttpauthtokens'}
 
 List all currently active session tokens
 
@@ -442,8 +446,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/httpauth-to
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authenticationhttpauthtokensname'/>
+
 ## authentication/httpauth-tokens/{name}
-{: name='authenticationhttpauthtokensname'}
 
 End the session associated with this token
 
@@ -498,7 +503,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## authentication/httpauth-tokens/{name}
-{: name='authenticationhttpauthtokensname'}
 
 Get information about a specific session token
 
@@ -585,8 +589,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authenticationusers'/>
+
 ## authentication/users
-{: name='authenticationusers'}
 
 Returns a list of all the users registered on the server.
 
@@ -688,7 +693,6 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users
 </code></pre>
 
 ## authentication/users
-{: name='authenticationusers'}
 
 Creates a new user.
 
@@ -776,8 +780,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authenticationusersname'/>
+
 ## authentication/users/{name}
-{: name='authenticationusersname'}
 
 Removes the user from the system.
 
@@ -833,7 +838,6 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/authentic
 </code></pre>
 
 ## authentication/users/{name}
-{: name='authenticationusersname'}
 
 Returns information about the user.
 
@@ -937,7 +941,6 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users/admin
 </code></pre>
 
 ## authentication/users/{name}
-{: name='authenticationusersname'}
 
 Update information about the user specified by {name}.
 
@@ -1046,8 +1049,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users/splun
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authorizationcapabilities'/>
+
 ## authorization/capabilities
-{: name='authorizationcapabilities'}
 
 List all system capabiilities
 
@@ -1177,8 +1181,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/capabilities
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authorizationcapabilitiesname'/>
+
 ## authorization/capabilities/{name}
-{: name='authorizationcapabilitiesname'}
 
 List a particular system capability name. This does not list any further information besides the name.
 
@@ -1219,8 +1224,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/capabilities
 
 </code></pre>
 
+<a name='authorizationroles'/>
+
 ## authorization/roles
-{: name='authorizationroles'}
 
 Lists all roles and the permissions for each role.
 
@@ -1395,7 +1401,6 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles
 </code></pre>
 
 ## authorization/roles
-{: name='authorizationroles'}
 
 Create a user role.
 
@@ -1548,8 +1553,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='authorizationrolesname'/>
+
 ## authorization/roles/{name}
-{: name='authorizationrolesname'}
 
 Deletes the role specified by {name}.
 
@@ -1606,7 +1612,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## authorization/roles/{name}
-{: name='authorizationrolesname'}
 
 Lists the permissions for the role specified by {name}.
 
@@ -1750,7 +1755,6 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles/Splunk
 </code></pre>
 
 ## authorization/roles/{name}
-{: name='authorizationrolesname'}
 
 Updates the role specified by {name}.
 
@@ -1842,8 +1846,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles/Splunk
 &lt;/feed&gt;
 </code></pre>
 
+<a name='storagepasswords'/>
+
 ## storage/passwords
-{: name='storagepasswords'}
 
 List available credentials
 
@@ -1942,7 +1947,6 @@ curl -k -u admin:pass https://localhost:8089/services/storage/passwords
 </code></pre>
 
 ## storage/passwords
-{: name='storagepasswords'}
 
 Create/edit new credentials
 
@@ -2037,8 +2041,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/storage/pa
 &lt;/feed&gt;
 </code></pre>
 
+<a name='storagepasswordsname'/>
+
 ## storage/passwords/{name}
-{: name='storagepasswordsname'}
 
 Delete the identified credentials
 
@@ -2095,7 +2100,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## storage/passwords/{name}
-{: name='storagepasswordsname'}
 
 List only the credentials identified by the given id
 
@@ -2191,7 +2195,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/storage/pa
 </code></pre>
 
 ## storage/passwords/{name}
-{: name='storagepasswordsname'}
 
 Edit the identified credentials.
 

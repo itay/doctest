@@ -1,5 +1,6 @@
+<a name='appsappinstall'/>
+
 ## apps/appinstall
-{: name='appsappinstall'}
 
 Installs a Splunk app from a local file or from a URL.
 
@@ -88,8 +89,9 @@ curl -k -u admin:pass https://localhost:8089/services/apps/appinstall/ \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='appsapptemplates'/>
+
 ## apps/apptemplates
-{: name='appsapptemplates'}
 
 Lists app templates that are used to create apps from the Mangager interface in Splunk Web.
 
@@ -178,8 +180,9 @@ curl -k -u admin:pass https://localhost:8089/services/apps/apptemplates
 &lt;/feed&gt;
 </code></pre>
 
+<a name='appsapptemplatesname'/>
+
 ## apps/apptemplates/{name}
-{: name='appsapptemplatesname'}
 
 Retrieves information about a specific app template.
 
@@ -263,8 +266,9 @@ curl -k -u admin:pass https://localhost:8089/services/apps/apptemplates/barebone
 &lt;/feed&gt;
 </code></pre>
 
+<a name='appslocal'/>
+
 ## apps/local
-{: name='appslocal'}
 
 Returns information on all locally-installed apps.
 
@@ -371,7 +375,6 @@ curl -k -u admin:pass https://localhost:8089/services/apps/local
 </code></pre>
 
 ## apps/local
-{: name='appslocal'}
 
 Creates a new application.
 
@@ -480,8 +483,9 @@ curl -k -u admin:pass https://localhost:8089/services/apps/local \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='appslocalname'/>
+
 ## apps/local/{name}
-{: name='appslocalname'}
 
 Removes the locally installed app with the name specified by {name}.
 
@@ -540,7 +544,6 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/apps/loca
 </code></pre>
 
 ## apps/local/{name}
-{: name='appslocalname'}
 
 Returns information about the locally installed app with the name specified by {name}.
 
@@ -651,7 +654,6 @@ curl -k -u admin:pass https://localhost:8089/services/apps/local/search
 </code></pre>
 
 ## apps/local/{name}
-{: name='appslocalname'}
 
 Updates the app specified by {name}.
 
@@ -740,8 +742,9 @@ curl -k -u admin:pass https://localhost:8089/services/apps/local/myApp \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='appslocalnamesetup'/>
+
 ## apps/local/{name}/setup
-{: name='appslocalnamesetup'}
 
 Returns any set up information for the app specified by {name}..
 
@@ -905,8 +908,9 @@ curl -k -u admin:pass https://localhost:8089/services/apps/local/unix/setup
 &lt;/feed&gt;
 </code></pre>
 
+<a name='appslocalnameupdate'/>
+
 ## apps/local/{name}/update
-{: name='appslocalnameupdate'}
 
 Returns any update information available for the app specified by {name}.
 

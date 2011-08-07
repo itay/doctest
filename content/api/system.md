@@ -1,5 +1,6 @@
+<a name='messages'/>
+
 ## messages
-{: name='messages'}
 
 Enumerate all systemwide messages. This is typically used for splunkd to advertise issues involving license quotas, license expirations, misconfigured indexes and disk space to users in SplunkWeb.
 
@@ -89,7 +90,6 @@ curl -k -u admin:pass https://localhost:8089/services/messages
 </code></pre>
 
 ## messages
-{: name='messages'}
 
 Create a persistent message displayed at /services/messages.
 
@@ -155,8 +155,9 @@ curl -k -u admin:pass https://localhost:8089/services/messages \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='messagesname'/>
+
 ## messages/{name}
-{: name='messagesname'}
 
 Deletes a message identified by {name}. After deleting the message, it no longer appears in SplunkWeb.
 
@@ -212,7 +213,6 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/messages/
 </code></pre>
 
 ## messages/{name}
-{: name='messagesname'}
 
 Get the entry corresponding of a single message identified by {name}.
 
@@ -296,8 +296,9 @@ curl -k -u admin:pass https://localhost:8089/services/messages/message
 &lt;/feed&gt;
 </code></pre>
 
+<a name='servercontrol'/>
+
 ## server/control
-{: name='servercontrol'}
 
 Lists the actions that can be performed at this endpoint.
 
@@ -369,8 +370,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/control
 &lt;/feed&gt;
 </code></pre>
 
+<a name='servercontrolrestart'/>
+
 ## server/control/restart
-{: name='servercontrolrestart'}
 
 Restarts the Splunk server.
 
@@ -426,8 +428,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/control/restart -X 
 &lt;/feed&gt;
 </code></pre>
 
+<a name='serverinfo'/>
+
 ## server/info
-{: name='serverinfo'}
 
 Enumerates the following information about the running splunkd: 
 
@@ -546,8 +549,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/info
 &lt;/feed&gt;
 </code></pre>
 
+<a name='serverinfoname'/>
+
 ## server/info/{name}
-{: name='serverinfoname'}
 
 Provides the identical information as /services/server/info. The only valid {name} here is server-info.
 
@@ -588,8 +592,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/info/server-info
 
 </code></pre>
 
+<a name='serverlogger'/>
+
 ## server/logger
-{: name='serverlogger'}
 
 Enumerates all splunkd logging categories, either specified in code or in $SPLUNK_HOME/etc/log.cfg.
 
@@ -714,8 +719,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/logger
 &lt;/feed&gt;
 </code></pre>
 
+<a name='serverloggername'/>
+
 ## server/logger/{name}
-{: name='serverloggername'}
 
 Describes a specific splunkd logging category.
 
@@ -803,7 +809,6 @@ curl -k -u admin:pass https://localhost:8089/services/server/logger/Application
 </code></pre>
 
 ## server/logger/{name}
-{: name='serverloggername'}
 
 Sets the logging level for a specific logging category.
 
@@ -865,8 +870,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/logger/Application 
 &lt;/feed&gt;
 </code></pre>
 
+<a name='serversettings'/>
+
 ## server/settings
-{: name='serversettings'}
 
 Returns the server configuration of an instance of Splunk.
 
@@ -965,8 +971,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/settings
 &lt;/feed&gt;
 </code></pre>
 
+<a name='serversettingsname'/>
+
 ## server/settings/{name}
-{: name='serversettingsname'}
 
 Returns the server configuration of this instance of Splunk.
 
@@ -1008,7 +1015,6 @@ curl -k -u admin:pass https://localhost:8089/services/server/settings/settings
 </code></pre>
 
 ## server/settings/{name}
-{: name='serversettingsname'}
 
 Updates the server configuration of this instance of Splunk.
 

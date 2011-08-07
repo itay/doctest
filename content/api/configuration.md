@@ -1,5 +1,6 @@
+<a name='configsconffile'/>
+
 ## configs/conf-{file}
-{: name='configsconffile'}
 
 Lists all stanzas contained in the named configuration file.
 
@@ -120,7 +121,6 @@ curl -k -u admin:pass https://localhost:8089/services/configs/conf-props
 </code></pre>
 
 ## configs/conf-{file}
-{: name='configsconffile'}
 
 Allows for creating the stanza specified by "name" in the configuration file specified by {file}.
 
@@ -230,8 +230,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/configs/co
 &lt;/feed&gt;
 </code></pre>
 
+<a name='configsconffilename'/>
+
 ## configs/conf-{file}/{name}
-{: name='configsconffilename'}
 
 Deletes the named stanza in the named configuration file.
 
@@ -282,7 +283,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## configs/conf-{file}/{name}
-{: name='configsconffilename'}
 
 Display only the named stanza from the named configuration file.
 
@@ -397,7 +397,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/configs/co
 </code></pre>
 
 ## configs/conf-{file}/{name}
-{: name='configsconffilename'}
 
 Allows for editing the named stanza from the named configuration file.
 
@@ -502,8 +501,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/configs/co
 &lt;/feed&gt;
 </code></pre>
 
+<a name='properties'/>
+
 ## properties
-{: name='properties'}
 
 Returns a list of configurations that are saved in configuration files.
 
@@ -830,7 +830,6 @@ curl -k -u admin:pass https://localhost:8089/services/properties
 </code></pre>
 
 ## properties
-{: name='properties'}
 
 Creates a new configuration file.
 
@@ -867,8 +866,9 @@ curl -k -u admin:pass https://localhost:8089/services/properties \
 
 </code></pre>
 
+<a name='propertiesfilename'/>
+
 ## properties/{file_name}
-{: name='propertiesfilename'}
 
 Returns a list of stanzas in the configuration file specified by {name}.
 
@@ -1965,7 +1965,6 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props
 </code></pre>
 
 ## properties/{file_name}
-{: name='propertiesfilename'}
 
 Creates a new stanza in the configuratin file specified by {name}.
 
@@ -2004,8 +2003,9 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props \
 
 </code></pre>
 
+<a name='propertiesfilenamestanzaname'/>
+
 ## properties/{file_name}/{stanza_name}
-{: name='propertiesfilenamestanzaname'}
 
 Returns the configuration values for the stanza represented by {stanza_name} in the configuration file specified by {file_name}.
 
@@ -2235,7 +2235,6 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props/proxylogs
 </code></pre>
 
 ## properties/{file_name}/{stanza_name}
-{: name='propertiesfilenamestanzaname'}
 
 Adds or updates key/value pairs in the specified stanza. One or more key/value pairs may be passed at one time to this endpoint.
 
@@ -2281,8 +2280,9 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props/proxylogs
 &lt;/response&gt;
 </code></pre>
 
+<a name='propertiesfilenamestanzanamekeyname'/>
+
 ## properties/{file_name}/{stanza_name}/{key_name}
-{: name='propertiesfilenamestanzanamekeyname'}
 
 Returns the value of the key in plain text for specified stanza and configuration file.
 
@@ -2314,7 +2314,6 @@ True
 </code></pre>
 
 ## properties/{file_name}/{stanza_name}/{key_name}
-{: name='propertiesfilenamestanzanamekeyname'}
 
 Update an existing key value.
 

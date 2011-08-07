@@ -1,5 +1,6 @@
+<a name='datalookuptablefiles'/>
+
 ## data/lookup-table-files
-{: name='datalookuptablefiles'}
 
 List lookup table files.
 
@@ -96,7 +97,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/lookup
 </code></pre>
 
 ## data/lookup-table-files
-{: name='datalookuptablefiles'}
 
 Create a lookup table file by moving a file from the upload staging area into $SPLUNK_HOME.
 
@@ -186,8 +186,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/lookup
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datalookuptablefilesname'/>
+
 ## data/lookup-table-files/{name}
-{: name='datalookuptablefilesname'}
 
 Delete the named lookup table file.
 
@@ -244,7 +245,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/lookup-table-files/{name}
-{: name='datalookuptablefilesname'}
 
 List a single lookup table file.
 
@@ -339,7 +339,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/lookup-table-files/{name}
-{: name='datalookuptablefilesname'}
 
 Modify a lookup table file by replacing it with a file from the upload staging area.
 
@@ -428,8 +427,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropsextractions'/>
+
 ## data/props/extractions
-{: name='datapropsextractions'}
 
 List field extractions.
 
@@ -522,7 +522,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 </code></pre>
 
 ## data/props/extractions
-{: name='datapropsextractions'}
 
 Create a new field extraction.
 
@@ -618,8 +617,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropsextractionsname'/>
+
 ## data/props/extractions/{name}
-{: name='datapropsextractionsname'}
 
 Delete the named field extraction.
 
@@ -675,7 +675,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/props/extractions/{name}
-{: name='datapropsextractionsname'}
 
 List a single field extraction.
 
@@ -768,7 +767,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/props/extractions/{name}
-{: name='datapropsextractionsname'}
 
 Modify the named field extraction.
 
@@ -855,8 +853,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropsfieldaliases'/>
+
 ## data/props/fieldaliases
-{: name='datapropsfieldaliases'}
 
 List field aliases.
 
@@ -952,7 +951,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 </code></pre>
 
 ## data/props/fieldaliases
-{: name='datapropsfieldaliases'}
 
 Create a new field alias.
 
@@ -1043,8 +1041,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropsfieldaliasesname'/>
+
 ## data/props/fieldaliases/{name}
-{: name='datapropsfieldaliasesname'}
 
 Delete the named field alias.
 
@@ -1100,7 +1099,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/props/fieldaliases/{name}
-{: name='datapropsfieldaliasesname'}
 
 List a single field alias.
 
@@ -1194,7 +1192,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/props/fieldaliases/{name}
-{: name='datapropsfieldaliasesname'}
 
 Modify the named field alias.
 
@@ -1280,8 +1277,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropslookups'/>
+
 ## data/props/lookups
-{: name='datapropslookups'}
 
 List automatic lookups.
 
@@ -1380,7 +1378,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 </code></pre>
 
 ## data/props/lookups
-{: name='datapropslookups'}
 
 Create a new automatic lookup.
 
@@ -1484,8 +1481,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropslookupsname'/>
+
 ## data/props/lookups/{name}
-{: name='datapropslookupsname'}
 
 Delete the named automatic lookup.
 
@@ -1541,7 +1539,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/props/lookups/{name}
-{: name='datapropslookupsname'}
 
 List a single automatic lookup.
 
@@ -1642,7 +1639,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/props/lookups/{name}
-{: name='datapropslookupsname'}
 
 Modify the named automatic lookup.
 
@@ -1739,8 +1735,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropssourcetyperename'/>
+
 ## data/props/sourcetype-rename
-{: name='datapropssourcetyperename'}
 
 List renamed sourcetypes.
 
@@ -1835,7 +1832,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 </code></pre>
 
 ## data/props/sourcetype-rename
-{: name='datapropssourcetyperename'}
 
 Rename a sourcetype.
 
@@ -1923,8 +1919,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/props/
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datapropssourcetyperenamename'/>
+
 ## data/props/sourcetype-rename/{name}
-{: name='datapropssourcetyperenamename'}
 
 Restore a sourcetype's original name.
 
@@ -1980,7 +1977,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/props/sourcetype-rename/{name}
-{: name='datapropssourcetyperenamename'}
 
 List a single renamed sourcetype.
 
@@ -2074,7 +2070,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/props/sourcetype-rename/{name}
-{: name='datapropssourcetyperenamename'}
 
 Rename a sourcetype again, i.e. modify a sourcetype's new name.
 
@@ -2161,8 +2156,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datatransformsextractions'/>
+
 ## data/transforms/extractions
-{: name='datatransformsextractions'}
 
 List field transformations.
 
@@ -2269,7 +2265,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/transf
 </code></pre>
 
 ## data/transforms/extractions
-{: name='datatransformsextractions'}
 
 Create a new field transformation.
 
@@ -2408,8 +2403,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/transf
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datatransformsextractionsname'/>
+
 ## data/transforms/extractions/{name}
-{: name='datatransformsextractionsname'}
 
 Delete the named field transformation.
 
@@ -2466,7 +2462,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/transforms/extractions/{name}
-{: name='datatransformsextractionsname'}
 
 List a single field transformation.
 
@@ -2580,7 +2575,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/transforms/extractions/{name}
-{: name='datatransformsextractionsname'}
 
 Modify the named field transformation.
 
@@ -2703,8 +2697,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datatransformslookups'/>
+
 ## data/transforms/lookups
-{: name='datatransformslookups'}
 
 List lookup definitions.
 
@@ -2813,7 +2808,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/transf
 </code></pre>
 
 ## data/transforms/lookups
-{: name='datatransformslookups'}
 
 Create a new lookup definition.
 
@@ -2946,8 +2940,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/data/transf
 &lt;/feed&gt;
 </code></pre>
 
+<a name='datatransformslookupsname'/>
+
 ## data/transforms/lookups/{name}
-{: name='datatransformslookupsname'}
 
 Delete the named lookup definition.
 
@@ -3004,7 +2999,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## data/transforms/lookups/{name}
-{: name='datatransformslookupsname'}
 
 List a single lookup definition.
 
@@ -3122,7 +3116,6 @@ curl -k -u admin:pass \
 </code></pre>
 
 ## data/transforms/lookups/{name}
-{: name='datatransformslookupsname'}
 
 Modify the named lookup definition.
 
@@ -3256,8 +3249,9 @@ curl -k -u admin:pass \
 &lt;/feed&gt;
 </code></pre>
 
+<a name='directory'/>
+
 ## directory
-{: name='directory'}
 
 Provides an enumeration of the following app scoped objects:
 
@@ -3383,8 +3377,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/directory
 &lt;/feed&gt;
 </code></pre>
 
+<a name='directoryname'/>
+
 ## directory/{name}
-{: name='directoryname'}
 
 Displays information about a single entity in the directory service enumeration.
 
@@ -3470,8 +3465,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/directory/d
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedeventtypes'/>
+
 ## saved/eventtypes
-{: name='savedeventtypes'}
 
 Retrieve saved event types.
 
@@ -3573,7 +3569,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/event
 </code></pre>
 
 ## saved/eventtypes
-{: name='savedeventtypes'}
 
 Creates a new event type.
 
@@ -3682,8 +3677,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/event
 &lt;/feed&gt;
 </code></pre>
 
+<a name='savedeventtypesname'/>
+
 ## saved/eventtypes/{name}
-{: name='savedeventtypesname'}
 
 Deletes this event type.
 
@@ -3740,7 +3736,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## saved/eventtypes/{name}
-{: name='savedeventtypesname'}
 
 Returns information on this event type.
 
@@ -3846,7 +3841,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/event
 </code></pre>
 
 ## saved/eventtypes/{name}
-{: name='savedeventtypesname'}
 
 Updates this event type.
 
@@ -3954,8 +3948,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/event
 &lt;/feed&gt;
 </code></pre>
 
+<a name='searchfields'/>
+
 ## search/fields
-{: name='searchfields'}
 
 Returns a list of fields registered for field configuration.
 
@@ -4030,8 +4025,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/fiel
 &lt;/feed&gt;
 </code></pre>
 
+<a name='searchfieldsfieldname'/>
+
 ## search/fields/{field_name}
-{: name='searchfieldsfieldname'}
 
 Retrieves information about the named field.
 
@@ -4071,8 +4067,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/fiel
 &lt;/entry&gt;
 </code></pre>
 
+<a name='searchfieldsfieldnametags'/>
+
 ## search/fields/{field_name}/tags
-{: name='searchfieldsfieldnametags'}
 
 Returns a list of tags that have been associated with the field specified by {field_name}.
 
@@ -4118,7 +4115,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/fiel
 </code></pre>
 
 ## search/fields/{field_name}/tags
-{: name='searchfieldsfieldnametags'}
 
 Update the tags associated with the field specified by {field_name}.
 
@@ -4169,8 +4165,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/fiel
 &lt;/response&gt;
 </code></pre>
 
+<a name='searchtags'/>
+
 ## search/tags
-{: name='searchtags'}
 
 Returns a list of all search time tags.
 
@@ -4220,8 +4217,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/tags
 &lt;/feed&gt;
 </code></pre>
 
+<a name='searchtagstagname'/>
+
 ## search/tags/{tag_name}
-{: name='searchtagstagname'}
 
 Deletes the tag, and its associated field:value pair assignments. The resulting change in tags.conf is to set all field:value pairs to <code>disabled</code>.
 
@@ -4260,7 +4258,6 @@ curl -k -u admin:pass --request DELETE \
 </code></pre>
 
 ## search/tags/{tag_name}
-{: name='searchtagstagname'}
 
 Returns a list of field:value pairs that have been associated with the tag specified by {tag_name}.
 
@@ -4307,7 +4304,6 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/tags
 </code></pre>
 
 ## search/tags/{tag_name}
-{: name='searchtagstagname'}
 
 Updates the field:value pairs associated with {tag_name}. 
 

@@ -1,6 +1,7 @@
 require 'pp'
 require 'yajl/json_gem'
 require 'stringio'
+require 'kramdown'
 
 module Splunk
   module Resources
@@ -20,6 +21,8 @@ module Splunk
         500 => '500 Internal server error. See response body for explanation',
         503 => '503 This feature has been disabled in Splunk configuration files'
       }
+
+      CACHED_TOC = nil
 
       def headers(status, head = {})
         css_class = (status == 204 || status == 404) ? 'headers no-response' : 'headers'
@@ -50,11 +53,11 @@ module Splunk
 
       def toc
         parent_dir = File.expand_path(File.dirname(File.dirname(__FILE__)))
-
+        
         toc_file = File.open(File.join(parent_dir, "toc/toc.html"), File::RDONLY)
         toc = toc_file.read()
-
-        return toc
+        
+        return toc.gsub("\n", "\n          ")
       end
     end
   end
