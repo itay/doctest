@@ -29,7 +29,9 @@
 
     <div id="wrapper">
       <div class="content">
-    <h2 name="licensergroups" id="licensergroups">licenser/groups</h2>
+    <p><a name="licensergroups"></a></p>
+
+<h2 id="licensergroups">licenser/groups</h2>
 
 <p>Lists all licenser groups.</p>
 
@@ -137,7 +139,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/groups
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licensergroupsname" id="licensergroupsname">licenser/groups/{name}</h2>
+<p><a name="licensergroupsname"></a></p>
+
+<h2 id="licensergroupsname">licenser/groups/{name}</h2>
 
 <p>Lists a specific licenser group.  A licenser group contains one or more licenser stacks that can operate concurrently.  Only one licenser group is active at any given time</p>
 
@@ -243,7 +247,7 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/groups/Forwarder
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licensergroupsname" id="licensergroupsname-1">licenser/groups/{name}</h2>
+<h2 id="licensergroupsname-1">licenser/groups/{name}</h2>
 
 <p>Activates specific licenser group with the side effect of deactivating the previously active one.</p>
 
@@ -329,7 +333,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/groups/Enterprise
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserlicenses" id="licenserlicenses">licenser/licenses</h2>
+<p><a name="licenserlicenses"></a></p>
+
+<h2 id="licenserlicenses">licenser/licenses</h2>
 
 <p>Lists all licenses that have been added.  Only a subset of these licenses may be active however, this is simply listing all licenses in every stack/group, regardless of which group is active</p>
 
@@ -464,7 +470,7 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/licenses
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserlicenses" id="licenserlicenses-1">licenser/licenses</h2>
+<h2 id="licenserlicenses-1">licenser/licenses</h2>
 
 <p>Add a license entitlement to this instance.</p>
 
@@ -596,7 +602,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/licenses \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserlicensesname" id="licenserlicensesname">licenser/licenses/{name}</h2>
+<p><a name="licenserlicensesname"></a></p>
+
+<h2 id="licenserlicensesname">licenser/licenses/{name}</h2>
 
 <p>Delete the license with hash corresponding to {name}.</p>
 
@@ -672,7 +680,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserlicensesname" id="licenserlicensesname-1">licenser/licenses/{name}</h2>
+<h2 id="licenserlicensesname-1">licenser/licenses/{name}</h2>
 
 <p>List attributes of specific license.  The {name} portion of URL is actually the hash of the license payload.</p>
 
@@ -804,7 +812,9 @@ curl -k -u admin:pass https://127.0.0.1:3339/services/licenser/licenses/E4BF . .
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licensermessages" id="licensermessages">licenser/messages</h2>
+<p><a name="licensermessages"></a></p>
+
+<h2 id="licensermessages">licenser/messages</h2>
 
 <p>Lists all messages/alerts/persisted warnings for this node.</p>
 
@@ -912,7 +922,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/messages
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licensermessagesname" id="licensermessagesname">licenser/messages/{name}</h2>
+<p><a name="licensermessagesname"></a></p>
+
+<h2 id="licensermessagesname">licenser/messages/{name}</h2>
 
 <p>List specific message whose msgId corresponds to {name} component.</p>
 
@@ -1019,7 +1031,9 @@ curl -k -u admin:pass \
     <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserpools" id="licenserpools">licenser/pools</h2>
+<p><a name="licenserpools"></a></p>
+
+<h2 id="licenserpools">licenser/pools</h2>
 
 <p>Enumerates all pools.  A pool logically partitions the daily volume entitlements of a stack. You can use a pool to divide license privileges amongst multiple slaves</p>
 
@@ -1161,7 +1175,7 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools
   . . .
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserpools" id="licenserpools-1">licenser/pools</h2>
+<h2 id="licenserpools-1">licenser/pools</h2>
 
 <p>Create a license pool.</p>
 
@@ -1260,7 +1274,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserpoolsname" id="licenserpoolsname">licenser/pools/{name}</h2>
+<p><a name="licenserpoolsname"></a></p>
+
+<h2 id="licenserpoolsname">licenser/pools/{name}</h2>
 
 <p>Delete specified pool.  Deleting pools is not supported for every pool. Certain stacks have fixed pools which cannot be deleted.</p>
 
@@ -1335,7 +1351,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserpoolsname" id="licenserpoolsname-1">licenser/pools/{name}</h2>
+<h2 id="licenserpoolsname-1">licenser/pools/{name}</h2>
 
 <p>Lists details of the pool specified by {name}.</p>
 
@@ -1451,7 +1467,7 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools/auto_genera
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserpoolsname" id="licenserpoolsname-2">licenser/pools/{name}</h2>
+<h2 id="licenserpoolsname-2">licenser/pools/{name}</h2>
 
 <p>Edit properties of the pool specified by {name}.</p>
 
@@ -1576,7 +1592,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/pools/myLicensePo
     <span class="ta">&lt;/content&gt;</span>
   <span class="ta">&lt;/entry&gt;</span></code></pre>
 
-<h2 name="licenserslaves" id="licenserslaves">licenser/slaves</h2>
+<p><a name="licenserslaves"></a></p>
+
+<h2 id="licenserslaves">licenser/slaves</h2>
 
 <p>List all slaves registered to this license master.  Any slave that attempts to connect to master is reported, regardless of whether it is allocated to a master licenser pool.</p>
 
@@ -1723,7 +1741,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/slaves
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserslavesname" id="licenserslavesname">licenser/slaves/{name}</h2>
+<p><a name="licenserslavesname"></a></p>
+
+<h2 id="licenserslavesname">licenser/slaves/{name}</h2>
 
 <p>List attributes of slave specified by {name}.</p>
 
@@ -1871,7 +1891,9 @@ curl -k -u admin:pass \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserstacks" id="licenserstacks">licenser/stacks</h2>
+<p><a name="licenserstacks"></a></p>
+
+<h2 id="licenserstacks">licenser/stacks</h2>
 
 <p>Enumerate all license stacks.</p>
 
@@ -2029,7 +2051,9 @@ curl -k -u admin:pass https://localhost:8089/services/licenser/stacks
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="licenserstacksname" id="licenserstacksname">licenser/stacks/{name}</h2>
+<p><a name="licenserstacksname"></a></p>
+
+<h2 id="licenserstacksname">licenser/stacks/{name}</h2>
 
 <p>Retrieve details of specific license stacks.  A license stack is comprised of one or more licenses of the same “type”.  The daily indexing quota of a license stack is additive, so a stack represents the aggregate entitlement for a collection of licenses.</p>
 

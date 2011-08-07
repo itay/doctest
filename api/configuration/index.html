@@ -29,7 +29,9 @@
 
     <div id="wrapper">
       <div class="content">
-    <h2 name="configsconffile" id="configsconf-file">configs/conf-{file}</h2>
+    <p><a name="configsconffile"></a></p>
+
+<h2 id="configsconf-file">configs/conf-{file}</h2>
 
 <p>Lists all stanzas contained in the named configuration file.</p>
 
@@ -160,7 +162,7 @@ curl -k -u admin:pass https://localhost:8089/services/configs/conf-props
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="configsconffile" id="configsconf-file-1">configs/conf-{file}</h2>
+<h2 id="configsconf-file-1">configs/conf-{file}</h2>
 
 <p>Allows for creating the stanza specified by “name” in the configuration file specified by {file}.</p>
 
@@ -281,7 +283,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/configs/co
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="configsconffilename" id="configsconf-filename">configs/conf-{file}/{name}</h2>
+<p><a name="configsconffilename"></a></p>
+
+<h2 id="configsconf-filename">configs/conf-{file}/{name}</h2>
 
 <p>Deletes the named stanza in the named configuration file.</p>
 
@@ -341,7 +345,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="configsconffilename" id="configsconf-filename-1">configs/conf-{file}/{name}</h2>
+<h2 id="configsconf-filename-1">configs/conf-{file}/{name}</h2>
 
 <p>Display only the named stanza from the named configuration file.</p>
 
@@ -465,7 +469,7 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/configs/co
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="configsconffilename" id="configsconf-filename-2">configs/conf-{file}/{name}</h2>
+<h2 id="configsconf-filename-2">configs/conf-{file}/{name}</h2>
 
 <p>Allows for editing the named stanza from the named configuration file.</p>
 
@@ -581,7 +585,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/configs/co
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="properties" id="properties">properties</h2>
+<p><a name="properties"></a></p>
+
+<h2 id="properties">properties</h2>
 
 <p>Returns a list of configurations that are saved in configuration files.</p>
 
@@ -911,7 +917,7 @@ curl -k -u admin:pass https://localhost:8089/services/properties
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="properties" id="properties-1">properties</h2>
+<h2 id="properties-1">properties</h2>
 
 <p>Creates a new configuration file.</p>
 
@@ -955,7 +961,9 @@ curl -k -u admin:pass https://localhost:8089/services/properties \
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="propertiesfilename" id="propertiesfilename">properties/{file_name}</h2>
+<p><a name="propertiesfilename"></a></p>
+
+<h2 id="propertiesfilename">properties/{file_name}</h2>
 
 <p>Returns a list of stanzas in the configuration file specified by {name}.</p>
 
@@ -2057,7 +2065,7 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="propertiesfilename" id="propertiesfilename-1">properties/{file_name}</h2>
+<h2 id="propertiesfilename-1">properties/{file_name}</h2>
 
 <p>Creates a new stanza in the configuratin file specified by {name}.</p>
 
@@ -2105,7 +2113,9 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props \
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="propertiesfilenamestanzaname" id="propertiesfilenamestanzaname">properties/{file_name}/{stanza_name}</h2>
+<p><a name="propertiesfilenamestanzaname"></a></p>
+
+<h2 id="propertiesfilenamestanzaname">properties/{file_name}/{stanza_name}</h2>
 
 <p>Returns the configuration values for the stanza represented by {stanza_name} in the configuration file specified by {file_name}.</p>
 
@@ -2340,7 +2350,7 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props/proxylogs
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="propertiesfilenamestanzaname" id="propertiesfilenamestanzaname-1">properties/{file_name}/{stanza_name}</h2>
+<h2 id="propertiesfilenamestanzaname-1">properties/{file_name}/{stanza_name}</h2>
 
 <p>Adds or updates key/value pairs in the specified stanza. One or more key/value pairs may be passed at one time to this endpoint.</p>
 
@@ -2397,7 +2407,9 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props/proxylogs
   <span class="ta">&lt;/messages&gt;</span>
 <span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="propertiesfilenamestanzanamekeyname" id="propertiesfilenamestanzanamekeyname">properties/{file_name}/{stanza_name}/{key_name}</h2>
+<p><a name="propertiesfilenamestanzanamekeyname"></a></p>
+
+<h2 id="propertiesfilenamestanzanamekeyname">properties/{file_name}/{stanza_name}/{key_name}</h2>
 
 <p>Returns the value of the key in plain text for specified stanza and configuration file.</p>
 
@@ -2434,7 +2446,7 @@ curl -k -u admin:pass https://localhost:8089/services/properties/props/proxylogs
 
 <pre class="highlight"><code class="language-xml">True</code></pre>
 
-<h2 name="propertiesfilenamestanzanamekeyname" id="propertiesfilenamestanzanamekeyname-1">properties/{file_name}/{stanza_name}/{key_name}</h2>
+<h2 id="propertiesfilenamestanzanamekeyname-1">properties/{file_name}/{stanza_name}/{key_name}</h2>
 
 <p>Update an existing key value.</p>
 

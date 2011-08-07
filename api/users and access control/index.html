@@ -29,7 +29,9 @@
 
     <div id="wrapper">
       <div class="content">
-    <h2 name="authlogin" id="authlogin">auth/login</h2>
+    <p><a name="authlogin"></a></p>
+
+<h2 id="authlogin">auth/login</h2>
 
 <p>Returns a session key to be used when making REST calls to splunkd.</p>
 
@@ -83,7 +85,9 @@ curl -k -u admin:pass  https://localhost:8089/services/auth/login \
   <span class="ta">&lt;sessionKey&gt;</span>192fd3e46a31246da7ea7f109e7f95fd<span class="ta">&lt;/sessionKey&gt;</span>
 <span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="authenticationauthtokens" id="authenticationauth-tokens">authentication/auth-tokens</h2>
+<p><a name="authenticationauthtokens"></a></p>
+
+<h2 id="authenticationauth-tokens">authentication/auth-tokens</h2>
 
 <p>Does nothing.  Is a placeholder for potential future information.</p>
 
@@ -170,7 +174,7 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/auth-tokens
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationauthtokens" id="authenticationauth-tokens-1">authentication/auth-tokens</h2>
+<h2 id="authenticationauth-tokens-1">authentication/auth-tokens</h2>
 
 <p>Creates an authentication token</p>
 
@@ -291,7 +295,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/auth-tokens
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationcurrentcontext" id="authenticationcurrent-context">authentication/current-context</h2>
+<p><a name="authenticationcurrentcontext"></a></p>
+
+<h2 id="authenticationcurrent-context">authentication/current-context</h2>
 
 <p>Lists one item named “context” which contains the name of the current user</p>
 
@@ -393,7 +399,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/current-con
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationcurrentcontextname" id="authenticationcurrent-contextname">authentication/current-context/{name}</h2>
+<p><a name="authenticationcurrentcontextname"></a></p>
+
+<h2 id="authenticationcurrent-contextname">authentication/current-context/{name}</h2>
 
 <p>Displays an item (always named “context”) that contains the name of the current user.</p>
 
@@ -450,7 +458,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/current-con
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="authenticationhttpauthtokens" id="authenticationhttpauth-tokens">authentication/httpauth-tokens</h2>
+<p><a name="authenticationhttpauthtokens"></a></p>
+
+<h2 id="authenticationhttpauth-tokens">authentication/httpauth-tokens</h2>
 
 <p>List all currently active session tokens</p>
 
@@ -556,7 +566,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/httpauth-to
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationhttpauthtokensname" id="authenticationhttpauth-tokensname">authentication/httpauth-tokens/{name}</h2>
+<p><a name="authenticationhttpauthtokensname"></a></p>
+
+<h2 id="authenticationhttpauth-tokensname">authentication/httpauth-tokens/{name}</h2>
 
 <p>End the session associated with this token</p>
 
@@ -626,7 +638,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationhttpauthtokensname" id="authenticationhttpauth-tokensname-1">authentication/httpauth-tokens/{name}</h2>
+<h2 id="authenticationhttpauth-tokensname-1">authentication/httpauth-tokens/{name}</h2>
 
 <p>Get information about a specific session token</p>
 
@@ -729,7 +741,9 @@ curl -k -u admin:pass \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationusers" id="authenticationusers">authentication/users</h2>
+<p><a name="authenticationusers"></a></p>
+
+<h2 id="authenticationusers">authentication/users</h2>
 
 <p>Returns a list of all the users registered on the server.</p>
 
@@ -845,7 +859,7 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationusers" id="authenticationusers-1">authentication/users</h2>
+<h2 id="authenticationusers-1">authentication/users</h2>
 
 <p>Creates a new user.</p>
 
@@ -952,7 +966,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users \
   <span class="ta">&lt;/s:messages&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationusersname" id="authenticationusersname">authentication/users/{name}</h2>
+<p><a name="authenticationusersname"></a></p>
+
+<h2 id="authenticationusersname">authentication/users/{name}</h2>
 
 <p>Removes the user from the system.</p>
 
@@ -1023,7 +1039,7 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/authentic
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationusersname" id="authenticationusersname-1">authentication/users/{name}</h2>
+<h2 id="authenticationusersname-1">authentication/users/{name}</h2>
 
 <p>Returns information about the user.</p>
 
@@ -1142,7 +1158,7 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users/admin
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authenticationusersname" id="authenticationusersname-2">authentication/users/{name}</h2>
+<h2 id="authenticationusersname-2">authentication/users/{name}</h2>
 
 <p>Update information about the user specified by {name}.</p>
 
@@ -1272,7 +1288,9 @@ curl -k -u admin:pass https://localhost:8089/services/authentication/users/splun
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authorizationcapabilities" id="authorizationcapabilities">authorization/capabilities</h2>
+<p><a name="authorizationcapabilities"></a></p>
+
+<h2 id="authorizationcapabilities">authorization/capabilities</h2>
 
 <p>List all system capabiilities</p>
 
@@ -1417,7 +1435,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/capabilities
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authorizationcapabilitiesname" id="authorizationcapabilitiesname">authorization/capabilities/{name}</h2>
+<p><a name="authorizationcapabilitiesname"></a></p>
+
+<h2 id="authorizationcapabilitiesname">authorization/capabilities/{name}</h2>
 
 <p>List a particular system capability name. This does not list any further information besides the name.</p>
 
@@ -1474,7 +1494,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/capabilities
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="authorizationroles" id="authorizationroles">authorization/roles</h2>
+<p><a name="authorizationroles"></a></p>
+
+<h2 id="authorizationroles">authorization/roles</h2>
 
 <p>Lists all roles and the permissions for each role.</p>
 
@@ -1663,7 +1685,7 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authorizationroles" id="authorizationroles-1">authorization/roles</h2>
+<h2 id="authorizationroles-1">authorization/roles</h2>
 
 <p>Create a user role.</p>
 
@@ -1835,7 +1857,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles \
   <span class="ta">&lt;/s:messages&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authorizationrolesname" id="authorizationrolesname">authorization/roles/{name}</h2>
+<p><a name="authorizationrolesname"></a></p>
+
+<h2 id="authorizationrolesname">authorization/roles/{name}</h2>
 
 <p>Deletes the role specified by {name}.</p>
 
@@ -1907,7 +1931,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authorizationrolesname" id="authorizationrolesname-1">authorization/roles/{name}</h2>
+<h2 id="authorizationrolesname-1">authorization/roles/{name}</h2>
 
 <p>Lists the permissions for the role specified by {name}.</p>
 
@@ -2066,7 +2090,7 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles/Splunk
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="authorizationrolesname" id="authorizationrolesname-2">authorization/roles/{name}</h2>
+<h2 id="authorizationrolesname-2">authorization/roles/{name}</h2>
 
 <p>Updates the role specified by {name}.</p>
 
@@ -2179,7 +2203,9 @@ curl -k -u admin:pass https://localhost:8089/services/authorization/roles/Splunk
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="storagepasswords" id="storagepasswords">storage/passwords</h2>
+<p><a name="storagepasswords"></a></p>
+
+<h2 id="storagepasswords">storage/passwords</h2>
 
 <p>List available credentials</p>
 
@@ -2292,7 +2318,7 @@ curl -k -u admin:pass https://localhost:8089/services/storage/passwords
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="storagepasswords" id="storagepasswords-1">storage/passwords</h2>
+<h2 id="storagepasswords-1">storage/passwords</h2>
 
 <p>Create/edit new credentials</p>
 
@@ -2406,7 +2432,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/storage/pa
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="storagepasswordsname" id="storagepasswordsname">storage/passwords/{name}</h2>
+<p><a name="storagepasswordsname"></a></p>
+
+<h2 id="storagepasswordsname">storage/passwords/{name}</h2>
 
 <p>Delete the identified credentials</p>
 
@@ -2478,7 +2506,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="storagepasswordsname" id="storagepasswordsname-1">storage/passwords/{name}</h2>
+<h2 id="storagepasswordsname-1">storage/passwords/{name}</h2>
 
 <p>List only the credentials identified by the given id</p>
 
@@ -2589,7 +2617,7 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/storage/pa
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="storagepasswordsname" id="storagepasswordsname-2">storage/passwords/{name}</h2>
+<h2 id="storagepasswordsname-2">storage/passwords/{name}</h2>
 
 <p>Edit the identified credentials.</p>
 

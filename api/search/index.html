@@ -29,7 +29,9 @@
 
     <div id="wrapper">
       <div class="content">
-    <h2 name="alertsfiredalerts" id="alertsfiredalerts">alerts/fired_alerts</h2>
+    <p><a name="alertsfiredalerts"></a></p>
+
+<h2 id="alertsfiredalerts">alerts/fired_alerts</h2>
 
 <p>Returns a summary view of the list of all alerts that have been fired on the server.</p>
 
@@ -131,7 +133,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/-/alerts/fired_ale
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="alertsfiredalertsname" id="alertsfiredalertsname">alerts/fired_alerts/{name}</h2>
+<p><a name="alertsfiredalertsname"></a></p>
+
+<h2 id="alertsfiredalertsname">alerts/fired_alerts/{name}</h2>
 
 <p>Deletes the record of this triggered alert.</p>
 
@@ -201,7 +205,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="alertsfiredalertsname" id="alertsfiredalertsname-1">alerts/fired_alerts/{name}</h2>
+<h2 id="alertsfiredalertsname-1">alerts/fired_alerts/{name}</h2>
 
 <p>Returns a list of all unexpired triggered or fired instances of this alert.</p>
 
@@ -296,7 +300,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/alerts/fire
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="datacommands" id="datacommands">data/commands</h2>
+<p><a name="datacommands"></a></p>
+
+<h2 id="datacommands">data/commands</h2>
 
 <p>List all python search commands.</p>
 
@@ -416,7 +422,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/comma
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="datacommandsname" id="datacommandsname">data/commands/{name}</h2>
+<p><a name="datacommandsname"></a></p>
+
+<h2 id="datacommandsname">data/commands/{name}</h2>
 
 <p>Provide information about a specific python search command.</p>
 
@@ -532,7 +540,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/nobody/search/data/comma
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearches" id="savedsearches">saved/searches</h2>
+<p><a name="savedsearches"></a></p>
+
+<h2 id="savedsearches">saved/searches</h2>
 
 <p>Returns information on all saved searches.</p>
 
@@ -690,7 +700,7 @@ curl -k -u admin:pass https://localhost:8089/services/saved/searches
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearches" id="savedsearches-1">saved/searches</h2>
+<h2 id="savedsearches-1">saved/searches</h2>
 
 <p>Creates a saved search.</p>
 
@@ -1177,7 +1187,9 @@ curl -k -u admin:pass \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearchesname" id="savedsearchesname">saved/searches/{name}</h2>
+<p><a name="savedsearchesname"></a></p>
+
+<h2 id="savedsearchesname">saved/searches/{name}</h2>
 
 <p>Deletes this saved search.</p>
 
@@ -1249,7 +1261,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearchesname" id="savedsearchesname-1">saved/searches/{name}</h2>
+<h2 id="savedsearchesname-1">saved/searches/{name}</h2>
 
 <p>Returns information on this saved search.</p>
 
@@ -1580,7 +1592,7 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/searc
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearchesname" id="savedsearchesname-2">saved/searches/{name}</h2>
+<h2 id="savedsearchesname-2">saved/searches/{name}</h2>
 
 <p>Updates this saved search.</p>
 
@@ -2079,7 +2091,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/saved/searc
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearchesnameacknowledge" id="savedsearchesnameacknowledge">saved/searches/{name}/acknowledge</h2>
+<p><a name="savedsearchesnameacknowledge"></a></p>
+
+<h2 id="savedsearchesnameacknowledge">saved/searches/{name}/acknowledge</h2>
 
 <p>Acknowledge the suppression of the alerts from this saved search and resume alerting. Action available only with POST</p>
 
@@ -2159,7 +2173,9 @@ curl -k -u admin:pass \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearchesnamedispatch" id="savedsearchesnamedispatch">saved/searches/{name}/dispatch</h2>
+<p><a name="savedsearchesnamedispatch"></a></p>
+
+<h2 id="savedsearchesnamedispatch">saved/searches/{name}/dispatch</h2>
 
 <p>Dispatch the saved search just like the scheduler would. Action available only through POST. The following optional arguments are accepted:
 dispatch.now:    [time] dispatch the search as if it this was the current time 
@@ -2232,7 +2248,9 @@ curl -k -u admin:pass \
 <pre class="highlight"><code class="language-xml"><span class="pp">&lt;?xml version='1.0' encoding='UTF-8'?&gt;</span>
 <span class="ta">&lt;response&gt;</span><span class="ta">&lt;sid&gt;</span>admin__admin__search__MySavedSearch_at_1311797437_d831d980832e3e89<span class="ta">&lt;/sid&gt;</span><span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="savedsearchesnamehistory" id="savedsearchesnamehistory">saved/searches/{name}/history</h2>
+<p><a name="savedsearchesnamehistory"></a></p>
+
+<h2 id="savedsearchesnamehistory">saved/searches/{name}/history</h2>
 
 <p>Get a list of available search jobs created from this saved search</p>
 
@@ -2358,7 +2376,9 @@ curl -k -u admin:pass \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="savedsearchesnamesuppress" id="savedsearchesnamesuppress">saved/searches/{name}/suppress</h2>
+<p><a name="savedsearchesnamesuppress"></a></p>
+
+<h2 id="savedsearchesnamesuppress">saved/searches/{name}/suppress</h2>
 
 <p>Check the suppression state of alerts from this saved search.</p>
 
@@ -2451,7 +2471,9 @@ curl -k -u admin:pass \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="scheduledviews" id="scheduledviews">scheduled/views</h2>
+<p><a name="scheduledviews"></a></p>
+
+<h2 id="scheduledviews">scheduled/views</h2>
 
 <p>Lists all scheduled view objects</p>
 
@@ -2572,7 +2594,9 @@ curl -k -u admin:pass https://localhost:8089/services/scheduled/views
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="scheduledviewsname" id="scheduledviewsname">scheduled/views/{name}</h2>
+<p><a name="scheduledviewsname"></a></p>
+
+<h2 id="scheduledviewsname">scheduled/views/{name}</h2>
 
 <p>Delete a scheduled view</p>
 
@@ -2644,7 +2668,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="scheduledviewsname" id="scheduledviewsname-1">scheduled/views/{name}</h2>
+<h2 id="scheduledviewsname-1">scheduled/views/{name}</h2>
 
 <p>List one scheduled view object</p>
 
@@ -2803,7 +2827,7 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="scheduledviewsname" id="scheduledviewsname-2">scheduled/views/{name}</h2>
+<h2 id="scheduledviewsname-2">scheduled/views/{name}</h2>
 
 <p>Edit a scheduled view, e.g. change schedule, enable disable schedule etc</p>
 
@@ -2974,7 +2998,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="scheduledviewsnamedispatch" id="scheduledviewsnamedispatch">scheduled/views/{name}/dispatch</h2>
+<p><a name="scheduledviewsnamedispatch"></a></p>
+
+<h2 id="scheduledviewsnamedispatch">scheduled/views/{name}/dispatch</h2>
 
 <p>Dispatch the scheduled search (powering the scheduled view) just like the scheduler would. Action available only through POST. The following optional arguments are accepted:”dispatch.now:    [time] dispatch the search as if it this was the current time
 dispatch.<em>:      any dispatch.</em> field of the search can be overriden
@@ -3045,7 +3071,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
 <pre class="highlight"><code class="language-xml"><span class="pp">&lt;?xml version='1.0' encoding='UTF-8'?&gt;</span>
 <span class="ta">&lt;response&gt;</span><span class="ta">&lt;sid&gt;</span>admin__admin__search_X1NjaGVkdWxlZFZpZXdfX015Vmlldw_at_1311805021_c24ff1ea77ad714b<span class="ta">&lt;/sid&gt;</span><span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="scheduledviewsnamehistory" id="scheduledviewsnamehistory">scheduled/views/{name}/history</h2>
+<p><a name="scheduledviewsnamehistory"></a></p>
+
+<h2 id="scheduledviewsnamehistory">scheduled/views/{name}/history</h2>
 
 <p>Get a list of search jobs used to deliver this scheduled view</p>
 
@@ -3136,7 +3164,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/scheduled/v
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchjobs" id="searchjobs">search/jobs</h2>
+<p><a name="searchjobs"></a></p>
+
+<h2 id="searchjobs">search/jobs</h2>
 
 <p>Returns a list of current searches. </p>
 
@@ -3465,7 +3495,7 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs
   . . .
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchjobs" id="searchjobs-1">search/jobs</h2>
+<h2 id="searchjobs-1">search/jobs</h2>
 
 <p>Starts a new search, returning the search ID (<code>&lt;sid&gt;</code>).</p>
 
@@ -3628,7 +3658,9 @@ curl -k -u admin:pass \
 
 <pre class="highlight"><code class="language-xml"><span class="ta">&lt;response&gt;</span><span class="ta">&lt;sid&gt;</span>mysearch_02151949<span class="ta">&lt;/sid&gt;</span><span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="searchjobsexport" id="searchjobsexport">search/jobs/export</h2>
+<p><a name="searchjobsexport"></a></p>
+
+<h2 id="searchjobsexport">search/jobs/export</h2>
 
 <p>Performs a search identical to POST search/jobs, except the search does not create a search ID (<sid>) and the search streams results as they become available. Streaming of results is based on the search string.</sid></p>
 
@@ -3810,7 +3842,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/jobs
         <span class="ta">&lt;/result&gt;</span>
 <span class="ta">&lt;/results&gt;</span></code></pre>
 
-<h2 name="searchjobssearchid" id="searchjobssearchid">search/jobs/{search_id}</h2>
+<p><a name="searchjobssearchid"></a></p>
+
+<h2 id="searchjobssearchid">search/jobs/{search_id}</h2>
 
 <p>Deletes the search job specified by {search_id}.</p>
 
@@ -3850,7 +3884,7 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/search/jo
 
 <pre class="highlight"><code class="language-xml"><span class="ta">&lt;response&gt;</span><span class="ta">&lt;messages&gt;</span><span class="ta">&lt;msg</span> <span class="an">type</span>=<span class="s"><span class="dl">'</span><span class="k">INFO</span><span class="dl">'</span></span><span class="ta">&gt;</span>Search job cancelled.<span class="ta">&lt;/msg&gt;</span><span class="ta">&lt;/messages&gt;</span><span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="searchjobssearchid" id="searchjobssearchid-1">search/jobs/{search_id}</h2>
+<h2 id="searchjobssearchid-1">search/jobs/{search_id}</h2>
 
 <p>Return summary information about the search job specified by {search_id}.</p>
 
@@ -4101,7 +4135,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
   <span class="ta">&lt;/content&gt;</span>
 <span class="ta">&lt;/entry&gt;</span></code></pre>
 
-<h2 name="searchjobssearchidcontrol" id="searchjobssearchidcontrol">search/jobs/{search_id}/control</h2>
+<p><a name="searchjobssearchidcontrol"></a></p>
+
+<h2 id="searchjobssearchidcontrol">search/jobs/{search_id}/control</h2>
 
 <p>Executes a job control command for the search specified by {search_id}.</p>
 
@@ -4149,7 +4185,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
 
 <pre class="highlight"><code class="language-xml"><span class="ta">&lt;response&gt;</span><span class="ta">&lt;messages&gt;</span><span class="ta">&lt;msg</span> <span class="an">type</span>=<span class="s"><span class="dl">'</span><span class="k">INFO</span><span class="dl">'</span></span><span class="ta">&gt;</span>Search job paused.<span class="ta">&lt;/msg&gt;</span><span class="ta">&lt;/messages&gt;</span><span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="searchjobssearchidevents" id="searchjobssearchidevents">search/jobs/{search_id}/events</h2>
+<p><a name="searchjobssearchidevents"></a></p>
+
+<h2 id="searchjobssearchidevents">search/jobs/{search_id}/events</h2>
 
 <p>Returns the events of the search specified by {search_id}. These events are the data from the search pipeline before the first “transforming” search command. This is the primary method for a client to fetch a set of UNTRANSFORMED events for the search job.</p>
 
@@ -4291,7 +4329,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/1312313809.20/
         <span class="ta">&lt;/result&gt;</span>
 <span class="ta">&lt;/results&gt;</span></code></pre>
 
-<h2 name="searchjobssearchidresults" id="searchjobssearchidresults">search/jobs/{search_id}/results</h2>
+<p><a name="searchjobssearchidresults"></a></p>
+
+<h2 id="searchjobssearchidresults">search/jobs/{search_id}/results</h2>
 
 <p>Returns the results of the search specified by {search_id}. This is the table that exists after all processing from the search pipeline has completed.</p>
 
@@ -4377,7 +4417,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
         }
 ]</code></pre>
 
-<h2 name="searchjobssearchidresultspreview" id="searchjobssearchidresultspreview">search/jobs/{search_id}/results_preview</h2>
+<p><a name="searchjobssearchidresultspreview"></a></p>
+
+<h2 id="searchjobssearchidresultspreview">search/jobs/{search_id}/results_preview</h2>
 
 <p>Returns the intermediate preview results of the search specified by {search_id}. When the job is complete, this gives the same response as /search/jobs/{search_id}/results.</p>
 
@@ -4467,7 +4509,9 @@ curl -k -u admin:pass \
         }
 ]</code></pre>
 
-<h2 name="searchjobssearchidsearch.log" id="searchjobssearchidsearchlog">search/jobs/{search_id}/search.log</h2>
+<p><a name="searchjobssearchidsearch.log"></a></p>
+
+<h2 id="searchjobssearchidsearchlog">search/jobs/{search_id}/search.log</h2>
 
 <p>Returns the search.log for the search job specified by {search_id}.</p>
 
@@ -4528,7 +4572,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mysearch_02151
 07-07-2011 21:36:22.077 INFO  LMConfig - receive_timeout=30
 . . .</code></pre>
 
-<h2 name="searchjobssearchidsummary" id="searchjobssearchidsummary">search/jobs/{search_id}/summary</h2>
+<p><a name="searchjobssearchidsummary"></a></p>
+
+<h2 id="searchjobssearchidsummary">search/jobs/{search_id}/summary</h2>
 
 <p>Returns “getFieldsAndStats” output of the so-far-read events.</p>
 
@@ -4620,7 +4666,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mytestsid/summ
         <span class="ta">&lt;/field&gt;</span>
 <span class="ta">&lt;/summary&gt;</span></code></pre>
 
-<h2 name="searchjobssearchidtimeline" id="searchjobssearchidtimeline">search/jobs/{search_id}/timeline</h2>
+<p><a name="searchjobssearchidtimeline"></a></p>
+
+<h2 id="searchjobssearchidtimeline">search/jobs/{search_id}/timeline</h2>
 
 <p>Returns event distribution over time of the so-far-read untransformed events.</p>
 
@@ -4699,7 +4747,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/jobs/mytestsid/time
 <span class="ta">&lt;bucket</span> <span class="an">c</span>=<span class="s"><span class="dl">'</span><span class="k">875</span><span class="dl">'</span></span> <span class="an">a</span>=<span class="s"><span class="dl">'</span><span class="k">875</span><span class="dl">'</span></span> <span class="an">t</span>=<span class="s"><span class="dl">'</span><span class="k">1312394400.000</span><span class="dl">'</span></span> <span class="an">d</span>=<span class="s"><span class="dl">'</span><span class="k">3600</span><span class="dl">'</span></span> <span class="an">f</span>=<span class="s"><span class="dl">'</span><span class="k">1</span><span class="dl">'</span></span> <span class="an">etz</span>=<span class="s"><span class="dl">'</span><span class="k">-25200</span><span class="dl">'</span></span> <span class="an">ltz</span>=<span class="s"><span class="dl">'</span><span class="k">-25200</span><span class="dl">'</span></span><span class="ta">&gt;</span>Wed Aug  3 11:00:00 2011<span class="ta">&lt;/bucket&gt;</span>
 <span class="ta">&lt;/timeline&gt;</span></code></pre>
 
-<h2 name="searchparser" id="searchparser">search/parser</h2>
+<p><a name="searchparser"></a></p>
+
+<h2 id="searchparser">search/parser</h2>
 
 <p>Parses Splunk search language and returns semantic map.</p>
 
@@ -4774,7 +4824,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/pars
         ]
 }</code></pre>
 
-<h2 name="searchtimeparser" id="searchtimeparser">search/timeparser</h2>
+<p><a name="searchtimeparser"></a></p>
+
+<h2 id="searchtimeparser">search/timeparser</h2>
 
 <p>Returns a lookup table of time arguments to absolute timestamps.</p>
 
@@ -4837,7 +4889,9 @@ curl -k -u admin:pass https://localhost:8089/servicesNS/admin/search/search/time
         <span class="ta">&lt;/dict&gt;</span>
 <span class="ta">&lt;/response&gt;</span></code></pre>
 
-<h2 name="searchtypeahead" id="searchtypeahead">search/typeahead</h2>
+<p><a name="searchtypeahead"></a></p>
+
+<h2 id="searchtypeahead">search/typeahead</h2>
 
 <p>Returns a list of words or descriptions for possible auto-complete terms.</p>
 

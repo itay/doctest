@@ -29,7 +29,9 @@
 
     <div id="wrapper">
       <div class="content">
-    <h2 name="deploymentclient" id="deploymentclient">deployment/client</h2>
+    <p><a name="deploymentclient"></a></p>
+
+<h2 id="deploymentclient">deployment/client</h2>
 
 <p>Returns the status of the deployment client in this Splunk instance, including the host/port of its deployment server, and which server classes it is a part of.</p>
 
@@ -141,7 +143,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/client
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentclientname" id="deploymentclientname">deployment/client/{name}</h2>
+<p><a name="deploymentclientname"></a></p>
+
+<h2 id="deploymentclientname">deployment/client/{name}</h2>
 
 <p>Returns the configuration for the named deployment client.  The only valid name here is “deployment-client”.  This is identical to accessing deployment/client without specifying a name.</p>
 
@@ -198,7 +202,7 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/client/deployme
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="deploymentclientname" id="deploymentclientname-1">deployment/client/{name}</h2>
+<h2 id="deploymentclientname-1">deployment/client/{name}</h2>
 
 <p>Updates the configuration for this deployment client.</p>
 
@@ -285,7 +289,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/client/deployme
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentclientnamereload" id="deploymentclientnamereload">deployment/client/{name}/reload</h2>
+<p><a name="deploymentclientnamereload"></a></p>
+
+<h2 id="deploymentclientnamereload">deployment/client/{name}/reload</h2>
 
 <p>Restarts the deployment client, reloading configuration from disk.</p>
 
@@ -378,7 +384,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/client/deployme
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentserver" id="deploymentserver">deployment/server</h2>
+<p><a name="deploymentserver"></a></p>
+
+<h2 id="deploymentserver">deployment/server</h2>
 
 <p>Returns the configurations of all deployment servers.</p>
 
@@ -510,7 +518,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/server
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentservername" id="deploymentservername">deployment/server/{name}</h2>
+<p><a name="deploymentservername"></a></p>
+
+<h2 id="deploymentservername">deployment/server/{name}</h2>
 
 <p>Get the configuration information for this deployment server.</p>
 
@@ -617,7 +627,7 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/server/dept1
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentservername" id="deploymentservername-1">deployment/server/{name}</h2>
+<h2 id="deploymentservername-1">deployment/server/{name}</h2>
 
 <p>Updates deployment server instance configuration</p>
 
@@ -750,7 +760,9 @@ curl -k -u admin:changeme https://localhost:8089/services/deployment/server/dept
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentserverclass" id="deploymentserverclass">deployment/serverclass</h2>
+<p><a name="deploymentserverclass"></a></p>
+
+<h2 id="deploymentserverclass">deployment/serverclass</h2>
 
 <p>Lists all server classes defined for a deployment server.</p>
 
@@ -862,7 +874,7 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/serverclass
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentserverclass" id="deploymentserverclass-1">deployment/serverclass</h2>
+<h2 id="deploymentserverclass-1">deployment/serverclass</h2>
 
 <p>Creates a server class.</p>
 
@@ -1062,7 +1074,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/serverclass \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentserverclassname" id="deploymentserverclassname">deployment/serverclass/{name}</h2>
+<p><a name="deploymentserverclassname"></a></p>
+
+<h2 id="deploymentserverclassname">deployment/serverclass/{name}</h2>
 
 <p>Returns information about this server class.</p>
 
@@ -1202,7 +1216,7 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/serverclass/MyS
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymentserverclassname" id="deploymentserverclassname-1">deployment/serverclass/{name}</h2>
+<h2 id="deploymentserverclassname-1">deployment/serverclass/{name}</h2>
 
 <p>Creates a new server class.</p>
 
@@ -1402,7 +1416,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/serverclass/MyS
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymenttenants" id="deploymenttenants">deployment/tenants</h2>
+<p><a name="deploymenttenants"></a></p>
+
+<h2 id="deploymenttenants">deployment/tenants</h2>
 
 <p>Lists the multi-tenants configuration for this Splunk instance.</p>
 
@@ -1535,7 +1551,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/tenants
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymenttenantsname" id="deploymenttenantsname">deployment/tenants/{name}</h2>
+<p><a name="deploymenttenantsname"></a></p>
+
+<h2 id="deploymenttenantsname">deployment/tenants/{name}</h2>
 
 <p>Lists the configuration for this deployment server in a multi-tenant configuration.</p>
 
@@ -1644,7 +1662,7 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/tenants/dept1
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="deploymenttenantsname" id="deploymenttenantsname-1">deployment/tenants/{name}</h2>
+<h2 id="deploymenttenantsname-1">deployment/tenants/{name}</h2>
 
 <p>Updates the configuration for this deployment server in a multi-tenant configuration.</p>
 
@@ -1797,7 +1815,9 @@ curl -k -u admin:pass https://localhost:8089/services/deployment/tenants/dept1 \
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedconfig" id="searchdistributedconfig">search/distributed/config</h2>
+<p><a name="searchdistributedconfig"></a></p>
+
+<h2 id="searchdistributedconfig">search/distributed/config</h2>
 
 <p>Lists the configuration options for the distributed search system.</p>
 
@@ -1916,7 +1936,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/distributed/config
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedconfigname" id="searchdistributedconfigname">search/distributed/config/{name}</h2>
+<p><a name="searchdistributedconfigname"></a></p>
+
+<h2 id="searchdistributedconfigname">search/distributed/config/{name}</h2>
 
 <p>Disables the distributed search feature.  Note that “distributedSearch” is the only valid name here.</p>
 
@@ -1986,7 +2008,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedconfigname" id="searchdistributedconfigname-1">search/distributed/config/{name}</h2>
+<h2 id="searchdistributedconfigname-1">search/distributed/config/{name}</h2>
 
 <p>Displays configuration options.  Note that “distributedSearch” is the only valid name here.</p>
 
@@ -2043,7 +2065,7 @@ curl -k -u admin:pass https://localhost:8089/services/search/distributed/config/
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="searchdistributedconfigname" id="searchdistributedconfigname-2">search/distributed/config/{name}</h2>
+<h2 id="searchdistributedconfigname-2">search/distributed/config/{name}</h2>
 
 <p>Update the configuration for the distributed search feature.  Note that “distributedSearch” is the only valid name here.</p>
 
@@ -2178,7 +2200,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/distributed/config/
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedpeers" id="searchdistributedpeers">search/distributed/peers</h2>
+<p><a name="searchdistributedpeers"></a></p>
+
+<h2 id="searchdistributedpeers">search/distributed/peers</h2>
 
 <p>Returns a list of configured search peers that this search head is configured to distribute searches to.</p>
 
@@ -2299,7 +2323,7 @@ curl -k -u admin:pass https://localhost:8089/services/search/distributed/peers
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedpeers" id="searchdistributedpeers-1">search/distributed/peers</h2>
+<h2 id="searchdistributedpeers-1">search/distributed/peers</h2>
 
 <p>Adds a new search peer.</p>
 
@@ -2388,7 +2412,9 @@ curl -k -u admin:pass https://localhost:8089/services/search/distributed/peers \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedpeersname" id="searchdistributedpeersname">search/distributed/peers/{name}</h2>
+<p><a name="searchdistributedpeersname"></a></p>
+
+<h2 id="searchdistributedpeersname">search/distributed/peers/{name}</h2>
 
 <p>Removes the distributed search peer specified by {name}.</p>
 
@@ -2459,7 +2485,7 @@ curl -k -u admin:pass --request DELETE \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedpeersname" id="searchdistributedpeersname-1">search/distributed/peers/{name}</h2>
+<h2 id="searchdistributedpeersname-1">search/distributed/peers/{name}</h2>
 
 <p>Returns information about the distributed search peer specified by {name}.</p>
 
@@ -2582,7 +2608,7 @@ curl -k -u admin:pass https://localhost:8089/services/search/distributed/peers/M
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="searchdistributedpeersname" id="searchdistributedpeersname-2">search/distributed/peers/{name}</h2>
+<h2 id="searchdistributedpeersname-2">search/distributed/peers/{name}</h2>
 
 <p>Update the configuration of the distributed search peer specified by {name}.</p>
 

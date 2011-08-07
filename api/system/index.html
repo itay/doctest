@@ -29,7 +29,9 @@
 
     <div id="wrapper">
       <div class="content">
-    <h2 name="messages" id="messages">messages</h2>
+    <p><a name="messages"></a></p>
+
+<h2 id="messages">messages</h2>
 
 <p>Enumerate all systemwide messages. This is typically used for splunkd to advertise issues involving license quotas, license expirations, misconfigured indexes and disk space to users in SplunkWeb.</p>
 
@@ -133,7 +135,7 @@ curl -k -u admin:pass https://localhost:8089/services/messages
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="messages" id="messages-1">messages</h2>
+<h2 id="messages-1">messages</h2>
 
 <p>Create a persistent message displayed at /services/messages.</p>
 
@@ -218,7 +220,9 @@ curl -k -u admin:pass https://localhost:8089/services/messages \
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="messagesname" id="messagesname">messages/{name}</h2>
+<p><a name="messagesname"></a></p>
+
+<h2 id="messagesname">messages/{name}</h2>
 
 <p>Deletes a message identified by {name}. After deleting the message, it no longer appears in SplunkWeb.</p>
 
@@ -289,7 +293,7 @@ curl -k -u admin:pass --request DELETE https://localhost:8089/services/messages/
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="messagesname" id="messagesname-1">messages/{name}</h2>
+<h2 id="messagesname-1">messages/{name}</h2>
 
 <p>Get the entry corresponding of a single message identified by {name}.</p>
 
@@ -389,7 +393,9 @@ curl -k -u admin:pass https://localhost:8089/services/messages/message
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="servercontrol" id="servercontrol">server/control</h2>
+<p><a name="servercontrol"></a></p>
+
+<h2 id="servercontrol">server/control</h2>
 
 <p>Lists the actions that can be performed at this endpoint.</p>
 
@@ -476,7 +482,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/control
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="servercontrolrestart" id="servercontrolrestart">server/control/restart</h2>
+<p><a name="servercontrolrestart"></a></p>
+
+<h2 id="servercontrolrestart">server/control/restart</h2>
 
 <p>Restarts the Splunk server.</p>
 
@@ -550,7 +558,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/control/restart -X 
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="serverinfo" id="serverinfo">server/info</h2>
+<p><a name="serverinfo"></a></p>
+
+<h2 id="serverinfo">server/info</h2>
 
 <p>Enumerates the following information about the running splunkd: </p>
 
@@ -684,7 +694,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/info
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="serverinfoname" id="serverinfoname">server/info/{name}</h2>
+<p><a name="serverinfoname"></a></p>
+
+<h2 id="serverinfoname">server/info/{name}</h2>
 
 <p>Provides the identical information as /services/server/info. The only valid {name} here is server-info.</p>
 
@@ -741,7 +753,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/info/server-info
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="serverlogger" id="serverlogger">server/logger</h2>
+<p><a name="serverlogger"></a></p>
+
+<h2 id="serverlogger">server/logger</h2>
 
 <p>Enumerates all splunkd logging categories, either specified in code or in $SPLUNK_HOME/etc/log.cfg.</p>
 
@@ -881,7 +895,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/logger
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="serverloggername" id="serverloggername">server/logger/{name}</h2>
+<p><a name="serverloggername"></a></p>
+
+<h2 id="serverloggername">server/logger/{name}</h2>
 
 <p>Describes a specific splunkd logging category.</p>
 
@@ -984,7 +1000,7 @@ curl -k -u admin:pass https://localhost:8089/services/server/logger/Application
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="serverloggername" id="serverloggername-1">server/logger/{name}</h2>
+<h2 id="serverloggername-1">server/logger/{name}</h2>
 
 <p>Sets the logging level for a specific logging category.</p>
 
@@ -1067,7 +1083,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/logger/Application 
   <span class="ta">&lt;s:messages</span><span class="ta">/&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="serversettings" id="serversettings">server/settings</h2>
+<p><a name="serversettings"></a></p>
+
+<h2 id="serversettings">server/settings</h2>
 
 <p>Returns the server configuration of an instance of Splunk.</p>
 
@@ -1181,7 +1199,9 @@ curl -k -u admin:pass https://localhost:8089/services/server/settings
   <span class="ta">&lt;/entry&gt;</span>
 <span class="ta">&lt;/feed&gt;</span></code></pre>
 
-<h2 name="serversettingsname" id="serversettingsname">server/settings/{name}</h2>
+<p><a name="serversettingsname"></a></p>
+
+<h2 id="serversettingsname">server/settings/{name}</h2>
 
 <p>Returns the server configuration of this instance of Splunk.</p>
 
@@ -1238,7 +1258,7 @@ curl -k -u admin:pass https://localhost:8089/services/server/settings/settings
 
 <pre class="highlight"><code class="language-xml"></code></pre>
 
-<h2 name="serversettingsname" id="serversettingsname-1">server/settings/{name}</h2>
+<h2 id="serversettingsname-1">server/settings/{name}</h2>
 
 <p>Updates the server configuration of this instance of Splunk.</p>
 
